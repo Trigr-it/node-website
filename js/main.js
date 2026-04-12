@@ -4,7 +4,7 @@ const PD={
     type:'Heritage \u00b7 Grade I Listed \u00b7 Old Street EC1',
     title:'LSO St. Luke\u2019s Church',
     ref:'DWG / PRJ-003',
-    img:'/images/projects/lso-st-lukes/01.jpg',
+    img:'/images/projects/lso-st-lukes/01.webp',
     client:'Unison Scaffolding',date:'February 2025',location:'Old Street, London',
     body:'<h3>Project Overview</h3><p>We were appointed as scaffold design consultants for a highly complex access scaffold at LSO St Luke\u2019s Church in Old Street, London. The historic Grade I listed building, which serves as a music venue for the London Symphony Orchestra, required conservation and maintenance works. Our role was to provide full scaffold design services for a safe, non-invasive access solution to both the low-level building and the prominent spire and clocktower.</p><h3>The Design Challenge</h3><p>The scaffold design featured a full perimeter freestanding access scaffold to the base structure, with no ties into the historic fabric. Stability was achieved through a series of engineered buttress frames and strategic bridging elements. We also designed a full-height wraparound scaffold to the spire and clocktower, enabling safe access for inspection, repair, and cleaning works at height.</p><p>Given the sensitivity of the structure and the uneven load-bearing capacity of the surrounding ground, we developed a complex network of bridge support frames beneath the entire scaffold area. These were carefully engineered to distribute loads to designated foundation points, avoiding any overstress to the existing building or substructure.</p><h3>What Node Delivered</h3><p>Full bespoke scaffold design package including detailed 2D construction drawings, complete 3D model and structural calculations. Close coordination with the conservation team, scaffold contractor and main contractor throughout. LSO St Luke\u2019s is a standout example of scaffold design for heritage structures \u2014 showcasing how engineered solutions can enable safe access to even the most complex buildings.</p>',
     specs:[['DWG Ref','PRJ-003 / Rev B'],['Client','Unison Scaffolding'],['Sector','Heritage / Culture \u00b7 Grade I'],['Location','Old Street, EC1'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','February 2025']]
@@ -58,7 +58,7 @@ const PD={
     type:'Residential \u00b7 Scaffold Design',
     title:'Millbrook Hall',
     ref:'DWG / PRJ-005',
-    img:'/images/projects/millbrook-hall/01.png',
+    img:'/images/projects/millbrook-hall/01.webp',
     client:'Scaffold Contractor',date:'January 2025',location:'UK',
     body:'<h3>Project Overview</h3><p>Our team provided scaffold design for the refurbishment of Millbrook Hall, a large residential property requiring comprehensive external works. Complex roof geometry and restricted site access required a fully bespoke scaffold solution rather than a standard modular system.</p><h3>What Node Delivered</h3><p>Bespoke scaffold design accounting for the full roof profile, with detailed tie positions and loading calculations. Full 2D drawing set and 3D model issued to allow the contractor to erect the scaffold without ambiguity.</p>',
     specs:[['DWG Ref','PRJ-005 / Rev A'],['Sector','Residential'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','January 2025']]
