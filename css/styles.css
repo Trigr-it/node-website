@@ -326,11 +326,6 @@ a.btn-w,a.btn-gw,a.btn-ghost,a.btn-prim,a.btn-cta{text-decoration:none}
   display:flex;align-items:center;justify-content:center;
   z-index:1;
 }
-.sd-svg{
-  width:min(320px,80%);
-  filter:drop-shadow(0 2px 8px rgba(0,0,0,.06));
-  animation:float 5s ease-in-out infinite;
-}
 /* Drawing annotation callouts */
 .sd-callouts{
   position:absolute;
