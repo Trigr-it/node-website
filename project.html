@@ -57,5 +57,15 @@
 <footer><div class="footer-top-strip"></div><div class="footer-inner"><div class="ft-title-block"><div class="ftb"><span class="ftb-l">Company</span><span class="ftb-v o">Node Group Ltd</span></div><div class="ftb"><span class="ftb-l">Page</span><span class="ftb-v">Project Detail</span></div><div class="ftb"><span class="ftb-l">Contact</span><span class="ftb-v o">020 3488 0882</span></div><div class="ftb"><span class="ftb-l">Coverage</span><span class="ftb-v">UK &amp; Ireland</span></div></div><div class="ft-grid"><div><a href="/" class="nav-logo" style="display:inline-flex"><div class="nav-mark"><img src="/images/n-logo-orange.png" alt="Node Group logo"></div><span class="nav-word">Node</span></a><p class="ft-desc">Specialist scaffold design. London &amp; Ireland.</p></div><div><div class="ft-lbl">Pages</div><ul class="ft-nav"><li><a href="/projects.html">All Projects</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div></div><div></div></div><div class="ft-bottom"><span class="ft-copy">&copy; 2026 NODE GROUP LTD</span></div></div></footer>
 
 <script src="/js/main.js?v=3"></script>
+<script>
+// Debug: show what happened after main.js loaded
+window.addEventListener('load',function(){
+  var slug=new URLSearchParams(window.location.search).get('p');
+  var dbg=document.createElement('div');
+  dbg.style.cssText='position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#FF6700;font-family:monospace;font-size:12px;padding:12px 20px;z-index:9999';
+  dbg.textContent='DEBUG | slug: '+slug+' | PD exists: '+(typeof PD!=='undefined')+' | PD[slug]: '+(typeof PD!=='undefined'&&!!PD[slug])+' | keys: '+(typeof PD!=='undefined'?Object.keys(PD).length:'N/A');
+  document.body.appendChild(dbg);
+});
+</script>
 </body>
 </html>
