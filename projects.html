@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Node Group | Scaffold Design London &amp; Ireland</title>
+<meta name="description" content="A selection of scaffold design projects by Node Group across heritage, commercial, residential and infrastructure sectors in London and Ireland.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="/" class="nav-logo">
+    <div class="nav-mark"><img src="/images/n-logo-orange.png" alt="Node Group logo"></div>
+    <div>
+      <div class="nav-word">Node</div>
+      <div class="nav-ref">DWG-001 / Rev A</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/" data-nav="home">Home</a></li>
+    <li><a href="/projects.html" data-nav="projects">Projects</a></li>
+    <li><a href="/about.html" data-nav="about">About</a></li>
+    <li><a href="/team.html" data-nav="team">Team</a></li>
+    <li><a href="/contact.html" data-nav="contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<div class="pg-hero">
+  <div class="pg-hero-inner">
+    <div class="s-hd-top" style="margin-bottom:12px"><span class="s-hd-ref">PRJ-000 / Our Work</span><div class="s-hd-line"></div></div>
+    <h1 class="pg-h1">Scaffold Design Projects<br>Across <em>London &amp; Ireland</em></h1>
+    <p class="s-sub" style="margin-top:14px;max-width:580px">Heritage landmarks, commercial refurbishments, residential schemes and infrastructure — a selection of recent work.</p>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:28px;flex-wrap:wrap">
+      <button class="fb on" onclick="filt('all',this)">All Projects</button>
+      <button class="fb" onclick="filt('heritage',this)">Heritage</button>
+      <button class="fb" onclick="filt('commercial',this)">Commercial</button>
+      <button class="fb" onclick="filt('residential',this)">Residential</button>
+      <button class="fb" onclick="filt('infrastructure',this)">Infrastructure</button>
+    </div>
+  </div>
+</div>
+<div class="masonry" id="pm">
+
+  <div class="pc" data-cat="heritage" onclick="det('lso-st-lukes')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:260px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/02/DJI_0067-768x768.jpg" alt="LSO St Luke's Church" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-003</div><div class="pc-type">Heritage &middot; Grade I &middot; Old Street EC1</div><div class="pc-title">LSO St. Luke's Church</div><p class="pc-desc">Highly complex access scaffold for the Grade I listed LSO venue. Freestanding system with engineered buttress frames — no ties into the historic fabric.</p><div class="pc-tb"><div class="pc-tb-date">Feb 2025 &middot; Unison Scaffolding</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="heritage" onclick="det('london-coliseum')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:240px"><img src="https://nodegroup.co.uk/wp-content/uploads/2024/12/1736762922797-768x768.webp" alt="London Coliseum" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-004</div><div class="pc-type">Heritage &middot; Westminster</div><div class="pc-title">London Coliseum</div><p class="pc-desc">Heritage scaffold for the ENO's iconic West End theatre. Heavy-duty pavement gantry and full-height dome scaffold with bridged bays.</p><div class="pc-tb"><div class="pc-tb-date">Oct 2024 &middot; UP Scaffolding</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="commercial" onclick="det('the-gherkin')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:280px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/03/Gherkin-01-768x768.webp" alt="The Gherkin scaffold design" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-001</div><div class="pc-type">Commercial &middot; Iconic &middot; City of London</div><div class="pc-title">The Gherkin</div><p class="pc-desc">Rolling cantilevered roof platform for BMU hydraulic arm replacement. New arm delivered by helicopter lift — zero disruption to occupants or public.</p><div class="pc-tb"><div class="pc-tb-date">Jan 2023 &middot; Proplant Scaffolding</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="heritage" onclick="det('garda-hq')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:240px"><img src="https://nodegroup.co.uk/wp-content/uploads/2024/10/1729513602427-768x768.webp" alt="Garda HQ Phoenix Park" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-007</div><div class="pc-type">Heritage &middot; Ireland &middot; Dublin</div><div class="pc-title">Garda HQ, Phoenix Park</div><p class="pc-desc">Large-scale freestanding LAYHER scaffold and full temporary roof for the 1842 Garda Headquarters. No ties into the listed structure.</p><div class="pc-tb"><div class="pc-tb-date">Oct 2024 &middot; Ainscaff &middot; Dublin</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="heritage" onclick="det('woolwich-town-hall')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:240px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/03/1732785084631-768x768.webp" alt="Woolwich Town Hall scaffold design" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-008</div><div class="pc-type">Heritage &middot; Grade II* &middot; Woolwich</div><div class="pc-title">Woolwich Town Hall</div><p class="pc-desc">Full perimeter scaffold and large-span temporary roof for a Grade II* listed civic building. Pavement gantry and bespoke bridge beams over fragile roof structure.</p><div class="pc-tb"><div class="pc-tb-date">Sep 2024 &middot; UP Scaffolding</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="commercial" onclick="det('fibi-house')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:220px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/03/1740390553476-768x768.webp" alt="Fibi House temporary roof scaffold" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-002</div><div class="pc-type">Commercial &middot; Temporary Roof</div><div class="pc-title">Fibi House</div><p class="pc-desc">Temporary roof scaffold for a central London commercial refurbishment. Full wind analysis and ULS load transfer calculations included.</p><div class="pc-tb"><div class="pc-tb-date">Feb 2025 &middot; Central London</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="residential" onclick="det('millbrook-hall')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:220px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/02/milbrookhall01.bak_-768x768.png" alt="Millbrook Hall scaffold design" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-005</div><div class="pc-type">Residential &middot; Scaffold</div><div class="pc-title">Millbrook Hall</div><p class="pc-desc">Bespoke scaffold for a large residential refurbishment with complex roof geometry and restricted access.</p><div class="pc-tb"><div class="pc-tb-date">Jan 2025</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="commercial" onclick="det('wardour-street')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:220px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/03/1719097796230-768x768.webp" alt="141 Wardour Street scaffold" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-006</div><div class="pc-type">Commercial &middot; Soho W1</div><div class="pc-title">141 Wardour Street</div><p class="pc-desc">Refurbishment scaffold in Soho with restricted pavement access and Westminster City Council highway licence documentation.</p><div class="pc-tb"><div class="pc-tb-date">Dec 2024 &middot; Soho W1</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+  <div class="pc" data-cat="commercial" onclick="det('merchant-square')" style="break-inside:avoid;margin-bottom:20px;display:block">
+    <div class="pc-img" style="height:240px"><img src="https://nodegroup.co.uk/wp-content/uploads/2025/04/merchantsquare3-768x768.jpg" alt="Merchant Square scaffold design" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s"></div>
+    <div class="pc-meta"><div class="pc-ref"><span class="pc-ref-dot"></span>DWG / PRJ-009</div><div class="pc-type">Commercial &middot; London</div><div class="pc-title">Merchant Square</div><p class="pc-desc">Bespoke access scaffold for a large mixed-use development in the heart of London, coordinated across multiple work packages.</p><div class="pc-tb"><div class="pc-tb-date">Jul 2024 &middot; London</div><div class="pc-tb-arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div></div>
+  </div>
+
+</div>
+
+<div class="cta-strip"><div class="cta-inner"><div class="cta-title">Working on something complex?</div><div class="cta-sub">The more demanding the brief, the more we're interested.</div></div><a class="btn-cta" href="/contact.html">Start a Conversation <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+
+<footer><div class="footer-top-strip"></div><div class="footer-inner"><div class="ft-title-block"><div class="ftb"><span class="ftb-l">Company</span><span class="ftb-v o">Node Group Ltd</span></div><div class="ftb"><span class="ftb-l">Page</span><span class="ftb-v">Projects</span></div><div class="ftb"><span class="ftb-l">Coverage</span><span class="ftb-v">UK &amp; Ireland</span></div><div class="ftb"><span class="ftb-l">Contact</span><span class="ftb-v o">020 3488 0882</span></div></div><div class="ft-grid"><div><a href="/" class="nav-logo" style="display:inline-flex"><div class="nav-mark"><img src="/images/n-logo-orange.png" alt="Node Group logo"></div><span class="nav-word">Node</span></a><p class="ft-desc">Specialist scaffold, hoist and MCWP design. London &amp; Ireland.</p></div><div><div class="ft-lbl">Company</div><ul class="ft-nav"><li><a href="/about.html">About</a></li><li><a href="/team.html">Team</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div><div class="ft-lbl">Services</div><ul class="ft-nav"><li><a href="#">Scaffold Design</a></li><li><a href="#">Hoist Design</a></li><li><a href="#">MCWP Design</a></li><li><a href="#">CAT 3 Checking</a></li></ul></div><div><div class="ft-lbl">Contact</div><ul class="ft-nav"><li><a href="tel:02034880882">020 3488 0882</a></li><li><a href="mailto:info@nodegroup.co.uk">info@nodegroup.co.uk</a></li></ul></div></div><div class="ft-bottom"><span class="ft-copy">&copy; 2026 NODE GROUP LTD</span></div></div></footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
