@@ -186,9 +186,14 @@ function galGo(i){
 
 /* ── Load project detail (project.html) ── */
 function loadProjectDetail(){
+  try{
   var slug=new URLSearchParams(window.location.search).get('p');
   var d=PD[slug];
-  if(!d){window.location.href='/projects.html';return;}
+  if(!d){
+    document.getElementById('d-title').textContent='Project not found';
+    document.getElementById('d-type').textContent='The project "'+slug+'" could not be loaded.';
+    return;
+  }
   document.getElementById('d-type').textContent=d.type;
   document.getElementById('d-title').textContent=d.title;
   document.getElementById('d-body').innerHTML=d.body;
@@ -219,6 +224,10 @@ function loadProjectDetail(){
       if(prevBtn) prevBtn.style.display='none';
       if(nextBtn) nextBtn.style.display='none';
     }
+  }
+  }catch(e){
+    document.getElementById('d-title').textContent='Error loading project';
+    document.getElementById('d-body').innerHTML='<p>'+e.message+'</p>';
   }
 }
 
