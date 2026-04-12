@@ -190,23 +190,25 @@ function loadProjectDetail(){
   document.title=d.title+' \u2014 Node Group';
   /* Build gallery */
   galImages=d.images||[d.img];
-  var galEl=document.getElementById('det-gallery');
-  if(galEl&&galImages.length){
-    document.getElementById('gal-img').src=galImages[0];
-    document.getElementById('gal-ref').textContent='IMG / 01 of '+galImages.length.toString().padStart(2,'0');
-    var thumbsEl=document.getElementById('gal-thumbs');
-    if(galImages.length>1){
+  var galImg=document.getElementById('gal-img');
+  var galRef=document.getElementById('gal-ref');
+  var thumbsEl=document.getElementById('gal-thumbs');
+  var prevBtn=document.querySelector('.gal-prev');
+  var nextBtn=document.querySelector('.gal-next');
+  if(galImg){
+    galImg.src=galImages[0];
+    if(galRef) galRef.textContent='IMG / 01 of '+String(galImages.length).padStart(2,'0');
+    if(galImages.length>1&&thumbsEl){
       thumbsEl.innerHTML=galImages.map(function(src,i){
         return '<button class="gal-thumb'+(i===0?' on':'')+'" onclick="galGo('+i+')"><img src="'+src+'" alt="Photo '+(i+1)+'"></button>';
       }).join('');
-      document.querySelector('.gal-prev').style.display='';
-      document.querySelector('.gal-next').style.display='';
+      if(prevBtn) prevBtn.style.display='';
+      if(nextBtn) nextBtn.style.display='';
     } else {
-      thumbsEl.style.display='none';
-      document.querySelector('.gal-prev').style.display='none';
-      document.querySelector('.gal-next').style.display='none';
+      if(thumbsEl) thumbsEl.style.display='none';
+      if(prevBtn) prevBtn.style.display='none';
+      if(nextBtn) nextBtn.style.display='none';
     }
-    galEl.style.display='';
   }
 }
 
