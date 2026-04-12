@@ -90,6 +90,16 @@ const PD={
     body:'<h3>Project Overview</h3><p>This scaffold design project in the heart of Merchant Square required a bespoke access solution for a large mixed-use development. The project involved careful coordination between multiple work packages and a tight urban site with restricted access.</p><h3>What Node Delivered</h3><p>Full scaffold design package including 2D construction drawings, 3D model and structural calculations, coordinated with the scaffold contractor and principal contractor throughout the project programme.</p>',
     specs:[['DWG Ref','PRJ-002 / Rev A'],['Sector','Commercial'],['Location','London'],['Type','Access Scaffold'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','July 2024']]
   },
+  'narrow-street':{
+    type:'Residential \u00b7 Riverside \u00b7 Limehouse E14',
+    title:'Narrow Street, Limehouse',
+    ref:'DWG / PRJ-013',
+    img:'/images/projects/narrow-street/01.jpg',
+    images:['/images/projects/narrow-street/01.jpg','/images/projects/narrow-street/02.jpg','/images/projects/narrow-street/03.jpg','/images/projects/narrow-street/04.jpg','/images/projects/narrow-street/05.jpg','/images/projects/narrow-street/06.jpg','/images/projects/narrow-street/07.jpg','/images/projects/narrow-street/08.jpg'],
+    client:'MW Scaffolding',date:'March 2024',location:'Narrow Street, Limehouse E14',
+    body:'<h3>Project Overview</h3><p>We provided the scaffold design for a highly challenging riverside project on Narrow Street in Limehouse, east London. The works required scaffolding for balcony replacement on a residential building directly on the Thames, with access only possible from the river side during tidal windows.</p><h3>The Design Challenge</h3><p>This was one of the most logistically demanding scaffold designs we have delivered. The riverside location meant all works were governed by PLA permits, changing water levels, and strict tide table scheduling \u2014 with only a short safe working window available each day for erection and dismantling operations.</p><p>The scaffold design had to account for the tidal environment, providing a stable and safe working platform for the balcony replacement works while managing the interface between the scaffold structure and the river wall. Detailed planning was required to ensure every lift could be completed within the available tidal window, with no room for delays or rework.</p><h3>What Node Delivered</h3><p>Full scaffold design package tailored to the unique constraints of a Thames-side project. 2D construction drawings, 3D model and structural calculations, coordinated closely with the scaffold contractor to align with the tidal programme. A strong example of scaffold design for complex riverside and logistically constrained environments.</p>',
+    specs:[['DWG Ref','PRJ-013 / Rev A'],['Client','MW Scaffolding'],['Sector','Residential \u00b7 Riverside'],['Location','Limehouse, E14'],['Type','Riverside Access Scaffold'],['Constraints','PLA Permits \u00b7 Tidal Windows'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','March 2024']]
+  },
   'vauxhall-gantry':{
     type:'Commercial \u00b7 Protection Gantry \u00b7 Vauxhall',
     title:'Vauxhall Protection Gantry',
