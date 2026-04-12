@@ -733,16 +733,14 @@ footer{
 .ft-nav button:hover,.ft-nav a:hover{color:var(--w)}
 /* Footer title block */
 .ft-title-block{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  border:1px solid rgba(255,255,255,.08);
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:48px;
   margin-bottom:24px;
 }
 .ftb{
-  padding:10px 16px;
-  border-right:1px solid rgba(255,255,255,.08);
+  padding:10px 0;
   font-family:var(--mono);
 }
-.ftb:last-child{border-right:none}
 .ftb-l{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.2);display:block;margin-bottom:2px}
 .ftb-v{font-size:11px;font-weight:500;color:rgba(255,255,255,.5)}
 .ftb-v.o{color:var(--o)}
