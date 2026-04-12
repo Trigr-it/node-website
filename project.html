@@ -56,9 +56,8 @@
 
 <footer><div class="footer-top-strip"></div><div class="footer-inner"><div class="ft-title-block"><div class="ftb"><span class="ftb-l">Company</span><span class="ftb-v o">Node Group Ltd</span></div><div class="ftb"><span class="ftb-l">Page</span><span class="ftb-v">Project Detail</span></div><div class="ftb"><span class="ftb-l">Contact</span><span class="ftb-v o">020 3488 0882</span></div><div class="ftb"><span class="ftb-l">Coverage</span><span class="ftb-v">UK &amp; Ireland</span></div></div><div class="ft-grid"><div><a href="/" class="nav-logo" style="display:inline-flex"><div class="nav-mark"><img src="/images/n-logo-orange.png" alt="Node Group logo"></div><span class="nav-word">Node</span></a><p class="ft-desc">Specialist scaffold design. London &amp; Ireland.</p></div><div><div class="ft-lbl">Pages</div><ul class="ft-nav"><li><a href="/projects.html">All Projects</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div></div><div></div></div><div class="ft-bottom"><span class="ft-copy">&copy; 2026 NODE GROUP LTD</span></div></div></footer>
 
+<script src="/js/main.js?v=5"></script>
 <script>
-/* Project loading runs inline — no external JS dependency */
-var defined_loadProject = true;
 var galImages=[];
 var galIndex=0;
 
@@ -72,74 +71,51 @@ function galGo(i){
   thumbs.forEach(function(t,idx){t.classList.toggle('on',idx===i)});
 }
 
-document.addEventListener('DOMContentLoaded',function(){
-  /* Nav highlighting */
-  document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('on')});
-  var projNav=document.querySelector('[data-nav="projects"]');
-  if(projNav) projNav.classList.add('on');
+/* Nav highlighting */
+document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('on')});
+var projNav=document.querySelector('[data-nav="projects"]');
+if(projNav) projNav.classList.add('on');
 
-  /* Load project from PD (defined in main.js) */
-  function tryLoad(){
-    if(typeof PD==='undefined'){
-      document.getElementById('d-title').textContent='Loading...';
-      return;
+/* Load project — PD is guaranteed defined because main.js loaded above */
+var slug=new URLSearchParams(window.location.search).get('p');
+var d=PD[slug];
+if(!d){
+  document.getElementById('d-title').textContent='Project not found';
+  document.getElementById('d-type').textContent='"'+slug+'" is not a recognised project.';
+} else {
+  document.getElementById('d-type').textContent=d.type;
+  document.getElementById('d-title').textContent=d.title;
+  document.getElementById('d-body').innerHTML=d.body;
+  document.getElementById('d-specs').innerHTML=d.specs.map(function(s){
+    return '<div class="spec-r"><div class="spec-l">'+s[0]+'</div><div class="spec-v">'+s[1]+'</div></div>';
+  }).join('');
+  var metaEl=document.getElementById('det-meta');
+  if(metaEl){metaEl.innerHTML=(d.client?'<span>Client: '+d.client+'</span>':'')+(d.location?'<span style="margin-left:24px">Location: '+d.location+'</span>':'')+(d.date?'<span style="margin-left:24px">Date: '+d.date+'</span>':'');}
+  document.title=d.title+' \u2014 Node Group';
+  galImages=d.images||[d.img];
+  var galImg=document.getElementById('gal-img');
+  var galRef=document.getElementById('gal-ref');
+  var thumbsEl=document.getElementById('gal-thumbs');
+  var prevBtn=document.querySelector('.gal-prev');
+  var nextBtn=document.querySelector('.gal-next');
+  if(galImg){
+    galImg.src=galImages[0];
+    if(galRef) galRef.textContent='IMG / 01 of '+String(galImages.length).padStart(2,'0');
+    if(galImages.length>1&&thumbsEl){
+      thumbsEl.innerHTML=galImages.map(function(src,i){
+        return '<button class="gal-thumb'+(i===0?' on':'')+'" onclick="galGo('+i+')"><img src="'+src+'" alt="Photo '+(i+1)+'"></button>';
+      }).join('');
+      if(prevBtn) prevBtn.style.display='';
+      if(nextBtn) nextBtn.style.display='';
+    } else {
+      if(thumbsEl) thumbsEl.style.display='none';
+      if(prevBtn) prevBtn.style.display='none';
+      if(nextBtn) nextBtn.style.display='none';
     }
-    var slug=new URLSearchParams(window.location.search).get('p');
-    var d=PD[slug];
-    if(!d){
-      document.getElementById('d-title').textContent='Project not found';
-      document.getElementById('d-type').textContent='"'+slug+'" is not a recognised project.';
-      return;
-    }
-    document.getElementById('d-type').textContent=d.type;
-    document.getElementById('d-title').textContent=d.title;
-    document.getElementById('d-body').innerHTML=d.body;
-    document.getElementById('d-specs').innerHTML=d.specs.map(function(s){
-      return '<div class="spec-r"><div class="spec-l">'+s[0]+'</div><div class="spec-v">'+s[1]+'</div></div>';
-    }).join('');
-    var metaEl=document.getElementById('det-meta');
-    if(metaEl){metaEl.innerHTML=(d.client?'<span>Client: '+d.client+'</span>':'')+(d.location?'<span style="margin-left:24px">Location: '+d.location+'</span>':'')+(d.date?'<span style="margin-left:24px">Date: '+d.date+'</span>':'');}
-    document.title=d.title+' \u2014 Node Group';
-    /* Gallery */
-    galImages=d.images||[d.img];
-    var galImg=document.getElementById('gal-img');
-    var galRef=document.getElementById('gal-ref');
-    var thumbsEl=document.getElementById('gal-thumbs');
-    var prevBtn=document.querySelector('.gal-prev');
-    var nextBtn=document.querySelector('.gal-next');
-    if(galImg){
-      galImg.src=galImages[0];
-      if(galRef) galRef.textContent='IMG / 01 of '+String(galImages.length).padStart(2,'0');
-      if(galImages.length>1&&thumbsEl){
-        thumbsEl.innerHTML=galImages.map(function(src,i){
-          return '<button class="gal-thumb'+(i===0?' on':'')+'" onclick="galGo('+i+')"><img src="'+src+'" alt="Photo '+(i+1)+'"></button>';
-        }).join('');
-        if(prevBtn) prevBtn.style.display='';
-        if(nextBtn) nextBtn.style.display='';
-      } else {
-        if(thumbsEl) thumbsEl.style.display='none';
-        if(prevBtn) prevBtn.style.display='none';
-        if(nextBtn) nextBtn.style.display='none';
-      }
-    }
-    /* Reveal animations */
-    document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(function(el,i){
-      setTimeout(function(){el.classList.add('on')},100+(i*60));
-    });
   }
-  tryLoad();
-});
-</script>
-<script src="/js/main.js?v=4"></script>
-<script>
-/* After main.js loads (with PD data), try loading again if first attempt had no PD */
-if(typeof PD!=='undefined'){
-  var slug=new URLSearchParams(window.location.search).get('p');
-  var d=PD[slug];
-  if(d && document.getElementById('d-title').textContent!==d.title){
-    /* PD loaded after inline script — re-run */
-    document.dispatchEvent(new Event('DOMContentLoaded'));
-  }
+  document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(function(el,i){
+    setTimeout(function(){el.classList.add('on')},100+(i*60));
+  });
 }
 </script>
 </body>
