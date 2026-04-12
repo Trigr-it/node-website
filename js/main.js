@@ -3,32 +3,32 @@ const PD={
   'lso-st-lukes':{
     type:'Heritage \u00b7 Grade I Listed \u00b7 Old Street EC1',
     title:'LSO St. Luke\u2019s Church',
-    ref:'DWG / PRJ-003',
+    ref:'DWG / PRJ-002',
     img:'/images/projects/lso-st-lukes/01.webp',
     images:['/images/projects/lso-st-lukes/01.webp','/images/projects/lso-st-lukes/02.webp','/images/projects/lso-st-lukes/03.webp'],
     client:'Unison Scaffolding',date:'February 2025',location:'Old Street, London',
     body:'<h3>Project Overview</h3><p>We were appointed as scaffold design consultants for a highly complex access scaffold at LSO St Luke\u2019s Church in Old Street, London. The historic Grade I listed building, which serves as a music venue for the London Symphony Orchestra, required conservation and maintenance works. Our role was to provide full scaffold design services for a safe, non-invasive access solution to both the low-level building and the prominent spire and clocktower.</p><h3>The Design Challenge</h3><p>The scaffold design featured a full perimeter freestanding access scaffold to the base structure, with no ties into the historic fabric. Stability was achieved through a series of engineered buttress frames and strategic bridging elements. We also designed a full-height wraparound scaffold to the spire and clocktower, enabling safe access for inspection, repair, and cleaning works at height.</p><p>Given the sensitivity of the structure and the uneven load-bearing capacity of the surrounding ground, we developed a complex network of bridge support frames beneath the entire scaffold area. These were carefully engineered to distribute loads to designated foundation points, avoiding any overstress to the existing building or substructure.</p><h3>What Node Delivered</h3><p>Full bespoke scaffold design package including detailed 2D construction drawings, complete 3D model and structural calculations. Close coordination with the conservation team, scaffold contractor and main contractor throughout. LSO St Luke\u2019s is a standout example of scaffold design for heritage structures \u2014 showcasing how engineered solutions can enable safe access to even the most complex buildings.</p>',
-    specs:[['DWG Ref','PRJ-003 / Rev B'],['Client','Unison Scaffolding'],['Sector','Heritage / Culture \u00b7 Grade I'],['Location','Old Street, EC1'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','February 2025']]
+    specs:[['DWG Ref','PRJ-002 / Rev B'],['Client','Unison Scaffolding'],['Sector','Heritage / Culture \u00b7 Grade I'],['Location','Old Street, EC1'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','February 2025']]
   },
   'london-coliseum':{
     type:'Heritage \u00b7 Scaffold Design \u00b7 Westminster',
     title:'London Coliseum',
-    ref:'DWG / PRJ-004',
+    ref:'DWG / PRJ-006',
     img:'/images/projects/london-coliseum/01.webp',
     images:['/images/projects/london-coliseum/01.webp','/images/projects/london-coliseum/02.webp'],
     client:'UP Scaffolding',date:'October 2024',location:'Westminster, London',
     body:'<h3>Project Overview</h3><p>We were appointed to provide heritage scaffold design for a major refurbishment project at the London Coliseum \u2014 one of the capital\u2019s most iconic historic theatres. The works required a combination of structural access solutions, balancing public safety with full access to the upper elevations of the building.</p><h3>The Design Challenge</h3><p>The scaffold design included a heavy-duty pavement gantry to support site operations at street level. Positioned on a busy central London thoroughfare, the gantry was designed to bridge over open access points and avoid any risk of material falls to the pavement below. This bridging requirement introduced a complex load path, with careful consideration given to both pedestrian clearances and the structural capacity of the gantry framework.</p><p>Above, we designed a full-height access scaffold wrapping around the curved terrace and dome of the Coliseum. The geometry of the building \u2014 especially around the dome \u2014 required a carefully coordinated layout. The scaffold tied into the building where possible, with restrictions managed through a combination of buttressing and bridged bays.</p><h3>What Node Delivered</h3><p>Full bespoke scaffold design coordinated directly with the scaffold contractor and site team. The design met both structural and practical requirements while respecting the sensitive heritage fa\u00e7ade. A strong example of scaffold design in London where heritage, safety, and heavy-duty access requirements intersect.</p>',
-    specs:[['DWG Ref','PRJ-004 / Rev A'],['Client','UP Scaffolding'],['Sector','Heritage / Arts'],['Location','Westminster, London'],['Type','Heritage Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','October 2024']]
+    specs:[['DWG Ref','PRJ-006 / Rev A'],['Client','UP Scaffolding'],['Sector','Heritage / Arts'],['Location','Westminster, London'],['Type','Heritage Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','October 2024']]
   },
   'the-gherkin':{
     type:'Commercial \u00b7 Iconic Structure \u00b7 City of London',
     title:'The Gherkin',
-    ref:'DWG / PRJ-001',
+    ref:'DWG / PRJ-010',
     img:'/images/projects/the-gherkin/01.webp',
     images:['/images/projects/the-gherkin/01.webp'],
     client:'Proplant Scaffolding',date:'January 2023',location:'City of London',
     body:'<h3>Project Overview</h3><p>The Gherkin is one of London\u2019s most iconic buildings, and we had the opportunity to provide a unique scaffolding design to replace the building maintenance unit hydraulic arm at roof level. This required a rolling cantilevered scaffold platform to be placed at the roof level, with the new arm to be delivered by helicopter lift.</p><h3>The Design Challenge</h3><p>Designing at the very top of one of London\u2019s most recognisable structures demanded an exceptionally precise engineering approach. The rolling cantilevered platform had to be stable under dynamic loading from the helicopter operation, while causing zero disruption to the building\u2019s occupants or the public below. Every element of the design was coordinated with the helicopter lift sequence.</p><h3>What Node Delivered</h3><p>Our team worked diligently to ensure the entire operation was safe and efficient, utilising years of experience in specialised scaffolding engineering. The building maintenance unit hydraulic arm was replaced without any disruption to the public \u2014 a project we\u2019re genuinely proud to have on our portfolio.</p>',
-    specs:[['DWG Ref','PRJ-001 / Rev A'],['Client','Proplant Scaffolding'],['Sector','Commercial \u00b7 Iconic'],['Location','City of London'],['Type','Cantilevered Roof Platform'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','January 2023']]
+    specs:[['DWG Ref','PRJ-010 / Rev A'],['Client','Proplant Scaffolding'],['Sector','Commercial \u00b7 Iconic'],['Location','City of London'],['Type','Cantilevered Roof Platform'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','January 2023']]
   },
   'garda-hq':{
     type:'Heritage \u00b7 Ireland \u00b7 Phoenix Park Dublin',
@@ -53,32 +53,32 @@ const PD={
   'fibi-house':{
     type:'Commercial \u00b7 Temporary Roof \u00b7 Central London',
     title:'Fibi House',
-    ref:'DWG / PRJ-002',
+    ref:'DWG / PRJ-003',
     img:'/images/projects/fibi-house/01.webp',
     images:['/images/projects/fibi-house/01.webp','/images/projects/fibi-house/02.webp','/images/projects/fibi-house/03.webp'],
     client:'Scaffold Contractor',date:'February 2025',location:'Central London',
     body:'<h3>Project Overview</h3><p>We were appointed to provide scaffold design for the refurbishment of Fibi House in central London. The scaffold design included a temporary roof structure to allow roofing works to proceed in all weather conditions without programme delays.</p><h3>The Design Challenge</h3><p>A temporary roof above an occupied adjacent building required careful load management and wind analysis. The design had to demonstrate that the system could withstand the full ULS wind load without transferring significant forces into the existing structure below.</p><h3>What Node Delivered</h3><p>Full temporary roof scaffold design including wind analysis and load transfer calculations. 2D construction drawings and 3D model provided to allow the scaffold contractor to price and programme the works accurately before mobilisation.</p>',
-    specs:[['DWG Ref','PRJ-002 / Rev A'],['Sector','Commercial Office'],['Location','Central London'],['Type','Temporary Roof Scaffold'],['Analysis','Wind Loading / ULS'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','February 2025']]
+    specs:[['DWG Ref','PRJ-003 / Rev A'],['Sector','Commercial Office'],['Location','Central London'],['Type','Temporary Roof Scaffold'],['Analysis','Wind Loading / ULS'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','February 2025']]
   },
   'millbrook-hall':{
     type:'Residential \u00b7 Scaffold Design',
     title:'Millbrook Hall',
-    ref:'DWG / PRJ-005',
+    ref:'DWG / PRJ-004',
     img:'/images/projects/millbrook-hall/01.webp',
     images:['/images/projects/millbrook-hall/01.webp','/images/projects/millbrook-hall/02.webp'],
     client:'Scaffold Contractor',date:'January 2025',location:'UK',
     body:'<h3>Project Overview</h3><p>Our team provided scaffold design for the refurbishment of Millbrook Hall, a large residential property requiring comprehensive external works. Complex roof geometry and restricted site access required a fully bespoke scaffold solution rather than a standard modular system.</p><h3>What Node Delivered</h3><p>Bespoke scaffold design accounting for the full roof profile, with detailed tie positions and loading calculations. Full 2D drawing set and 3D model issued to allow the contractor to erect the scaffold without ambiguity.</p>',
-    specs:[['DWG Ref','PRJ-005 / Rev A'],['Sector','Residential'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','January 2025']]
+    specs:[['DWG Ref','PRJ-004 / Rev A'],['Sector','Residential'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','January 2025']]
   },
   'wardour-street':{
     type:'Commercial \u00b7 Refurbishment \u00b7 Soho W1',
     title:'141 Wardour Street',
-    ref:'DWG / PRJ-006',
+    ref:'DWG / PRJ-005',
     img:'/images/projects/wardour-street/01.webp',
     images:['/images/projects/wardour-street/01.webp'],
     client:'Scaffold Contractor',date:'December 2024',location:'Soho, London W1',
     body:'<h3>Project Overview</h3><p>We were appointed to deliver the scaffold design for a refurbishment project at 141 Wardour Street in the heart of Soho. The scaffold design had to address highly restricted pavement space on one of central London\u2019s busiest streets while maintaining pedestrian access throughout the works.</p><h3>The Design Challenge</h3><p>Wardour Street\u2019s narrow pavement, combined with active ground-floor retail, meant any scaffold encroaching onto the public highway required full loading analysis and Westminster City Council approval. The design minimised footway obstruction while maintaining full access to upper floors throughout the works programme.</p><h3>What Node Delivered</h3><p>Bespoke scaffold design with full documentation for the highway licence application. Calculations demonstrating compliance with Westminster requirements, alongside a full 2D and 3D design package issued to the contractor.</p>',
-    specs:[['DWG Ref','PRJ-006 / Rev A'],['Sector','Commercial'],['Location','Soho, W1'],['Type','Refurbishment Scaffold'],['Authority','Westminster City Council'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','December 2024']]
+    specs:[['DWG Ref','PRJ-005 / Rev A'],['Sector','Commercial'],['Location','Soho, W1'],['Type','Refurbishment Scaffold'],['Authority','Westminster City Council'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','December 2024']]
   },
   'merchant-square':{
     type:'Commercial \u00b7 Scaffold Design \u00b7 London',
@@ -93,12 +93,12 @@ const PD={
   'canada-square':{
     type:'Commercial \u00b7 Signage Removal \u00b7 Canary Wharf',
     title:'5 Canada Square, Canary Wharf',
-    ref:'DWG / PRJ-010',
+    ref:'DWG / PRJ-001',
     img:'/images/projects/canada-square/01.jpg',
     images:['/images/projects/canada-square/01.jpg','/images/projects/canada-square/02.jpg','/images/projects/canada-square/03.jpg','/images/projects/canada-square/04.jpg','/images/projects/canada-square/05.jpg','/images/projects/canada-square/06.jpg','/images/projects/canada-square/07.jpg','/images/projects/canada-square/08.jpg'],
     client:'Proplant Scaffolding',date:'March 2026',location:'Canary Wharf, London',
     body:'<h3>Project Overview</h3><p>We provided the scaffold design for a high-profile signage removal project at 5 Canada Square in Canary Wharf \u2014 the former Bank of America building. The works required a bespoke access solution to safely remove large-scale signage from the upper levels of the building, with significant constraints around height, projection over the public realm, and weekend-only working windows.</p><h3>The Design Challenge</h3><p>The design centred on a Layher access staircase from roof level up to the structural steel framework, with a continuous beamed walkway spanning across the steelwork to provide access to both the north and south faces of the building. Hanging scaffolds were then installed on both the interior and exterior faces of the signage positions to allow safe removal.</p><p>Aluminium standards were specified to reduce weight for the dropper installations, and full material tethering was required throughout due to the extreme height and the projection of the scaffold over the building edge. All erection and dismantling was coordinated around weekend road and pavement closures in Canary Wharf.</p><h3>What Node Delivered</h3><p>Full bespoke scaffold design package using the Layher system to minimise loose fittings at height. 2D construction drawings, 3D model and structural calculations delivered to programme. The project was completed ahead of schedule with no safety incidents \u2014 a strong example of engineered access design for complex signage works at height.</p>',
-    specs:[['DWG Ref','PRJ-010 / Rev A'],['Client','Proplant Scaffolding'],['Sector','Commercial \u00b7 Signage'],['Location','Canary Wharf, London'],['Type','Hanging Scaffold + Access'],['System','LAYHER'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','March 2026']]
+    specs:[['DWG Ref','PRJ-001 / Rev A'],['Client','Proplant Scaffolding'],['Sector','Commercial \u00b7 Signage'],['Location','Canary Wharf, London'],['Type','Hanging Scaffold + Access'],['System','LAYHER'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','March 2026']]
   }
 };
 
