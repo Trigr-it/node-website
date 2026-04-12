@@ -239,5 +239,5 @@ document.addEventListener('DOMContentLoaded',function(){
       .forEach(function(el,i){setTimeout(function(){el.classList.add('on')},100+(i*60))});
   },50);
   if(document.querySelectorAll('[data-count]').length) setTimeout(runCounters,400);
-  if(document.getElementById('d-type')) loadProjectDetail();
+  /* Project detail loading is now inline in project.html */
 });

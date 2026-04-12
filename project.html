@@ -31,7 +31,7 @@
   <div class="det-header">
     <a href="/projects.html" class="det-back"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back to All Projects</a>
     <div class="det-type" id="d-type"></div>
-    <h1 class="det-title" id="d-title"></h1>
+    <h1 class="det-title" id="d-title">Loading project...</h1>
     <div id="det-meta" style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-top:14px;"></div>
   </div>
 </div>
@@ -56,16 +56,91 @@
 
 <footer><div class="footer-top-strip"></div><div class="footer-inner"><div class="ft-title-block"><div class="ftb"><span class="ftb-l">Company</span><span class="ftb-v o">Node Group Ltd</span></div><div class="ftb"><span class="ftb-l">Page</span><span class="ftb-v">Project Detail</span></div><div class="ftb"><span class="ftb-l">Contact</span><span class="ftb-v o">020 3488 0882</span></div><div class="ftb"><span class="ftb-l">Coverage</span><span class="ftb-v">UK &amp; Ireland</span></div></div><div class="ft-grid"><div><a href="/" class="nav-logo" style="display:inline-flex"><div class="nav-mark"><img src="/images/n-logo-orange.png" alt="Node Group logo"></div><span class="nav-word">Node</span></a><p class="ft-desc">Specialist scaffold design. London &amp; Ireland.</p></div><div><div class="ft-lbl">Pages</div><ul class="ft-nav"><li><a href="/projects.html">All Projects</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li></ul></div><div></div><div></div></div><div class="ft-bottom"><span class="ft-copy">&copy; 2026 NODE GROUP LTD</span></div></div></footer>
 
-<script src="/js/main.js?v=3"></script>
 <script>
-// Debug: show what happened after main.js loaded
-window.addEventListener('load',function(){
-  var slug=new URLSearchParams(window.location.search).get('p');
-  var dbg=document.createElement('div');
-  dbg.style.cssText='position:fixed;bottom:0;left:0;right:0;background:#1a1a1a;color:#FF6700;font-family:monospace;font-size:12px;padding:12px 20px;z-index:9999';
-  dbg.textContent='DEBUG | slug: '+slug+' | PD exists: '+(typeof PD!=='undefined')+' | PD[slug]: '+(typeof PD!=='undefined'&&!!PD[slug])+' | keys: '+(typeof PD!=='undefined'?Object.keys(PD).length:'N/A');
-  document.body.appendChild(dbg);
+/* Project loading runs inline — no external JS dependency */
+var defined_loadProject = true;
+var galImages=[];
+var galIndex=0;
+
+function galGo(i){
+  if(i<0) i=galImages.length-1;
+  if(i>=galImages.length) i=0;
+  galIndex=i;
+  document.getElementById('gal-img').src=galImages[i];
+  document.getElementById('gal-ref').textContent='IMG / '+String(i+1).padStart(2,'0')+' of '+String(galImages.length).padStart(2,'0');
+  var thumbs=document.querySelectorAll('.gal-thumb');
+  thumbs.forEach(function(t,idx){t.classList.toggle('on',idx===i)});
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+  /* Nav highlighting */
+  document.querySelectorAll('.nav-links a').forEach(function(a){a.classList.remove('on')});
+  var projNav=document.querySelector('[data-nav="projects"]');
+  if(projNav) projNav.classList.add('on');
+
+  /* Load project from PD (defined in main.js) */
+  function tryLoad(){
+    if(typeof PD==='undefined'){
+      document.getElementById('d-title').textContent='Loading...';
+      return;
+    }
+    var slug=new URLSearchParams(window.location.search).get('p');
+    var d=PD[slug];
+    if(!d){
+      document.getElementById('d-title').textContent='Project not found';
+      document.getElementById('d-type').textContent='"'+slug+'" is not a recognised project.';
+      return;
+    }
+    document.getElementById('d-type').textContent=d.type;
+    document.getElementById('d-title').textContent=d.title;
+    document.getElementById('d-body').innerHTML=d.body;
+    document.getElementById('d-specs').innerHTML=d.specs.map(function(s){
+      return '<div class="spec-r"><div class="spec-l">'+s[0]+'</div><div class="spec-v">'+s[1]+'</div></div>';
+    }).join('');
+    var metaEl=document.getElementById('det-meta');
+    if(metaEl){metaEl.innerHTML=(d.client?'<span>Client: '+d.client+'</span>':'')+(d.location?'<span style="margin-left:24px">Location: '+d.location+'</span>':'')+(d.date?'<span style="margin-left:24px">Date: '+d.date+'</span>':'');}
+    document.title=d.title+' \u2014 Node Group';
+    /* Gallery */
+    galImages=d.images||[d.img];
+    var galImg=document.getElementById('gal-img');
+    var galRef=document.getElementById('gal-ref');
+    var thumbsEl=document.getElementById('gal-thumbs');
+    var prevBtn=document.querySelector('.gal-prev');
+    var nextBtn=document.querySelector('.gal-next');
+    if(galImg){
+      galImg.src=galImages[0];
+      if(galRef) galRef.textContent='IMG / 01 of '+String(galImages.length).padStart(2,'0');
+      if(galImages.length>1&&thumbsEl){
+        thumbsEl.innerHTML=galImages.map(function(src,i){
+          return '<button class="gal-thumb'+(i===0?' on':'')+'" onclick="galGo('+i+')"><img src="'+src+'" alt="Photo '+(i+1)+'"></button>';
+        }).join('');
+        if(prevBtn) prevBtn.style.display='';
+        if(nextBtn) nextBtn.style.display='';
+      } else {
+        if(thumbsEl) thumbsEl.style.display='none';
+        if(prevBtn) prevBtn.style.display='none';
+        if(nextBtn) nextBtn.style.display='none';
+      }
+    }
+    /* Reveal animations */
+    document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(function(el,i){
+      setTimeout(function(){el.classList.add('on')},100+(i*60));
+    });
+  }
+  tryLoad();
 });
+</script>
+<script src="/js/main.js?v=4"></script>
+<script>
+/* After main.js loads (with PD data), try loading again if first attempt had no PD */
+if(typeof PD!=='undefined'){
+  var slug=new URLSearchParams(window.location.search).get('p');
+  var d=PD[slug];
+  if(d && document.getElementById('d-title').textContent!==d.title){
+    /* PD loaded after inline script — re-run */
+    document.dispatchEvent(new Event('DOMContentLoaded'));
+  }
+}
 </script>
 </body>
 </html>
