@@ -1057,7 +1057,7 @@ a.ci-val:hover{color:var(--o)}
 }
 .fb:hover{border-color:var(--ob);color:var(--k)}
 .fb.on{background:var(--o);border-color:var(--o);color:var(--w)}
-.masonry{padding:52px 52px 88px;columns:3;column-gap:20px}
+.masonry{padding:52px 52px 88px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 
 /* ─── RESPONSIVE ─────────────────────── */
 @media(max-width:1100px){
@@ -1066,7 +1066,7 @@ a.ci-val:hover{color:var(--o)}
   .svc-grid{grid-template-columns:repeat(2,1fr)}
   .diff{grid-template-columns:1fr}
   .proj-grid{grid-template-columns:repeat(2,1fr)}
-  .masonry{columns:2}
+  .masonry{grid-template-columns:repeat(2,1fr)}
   .team-grid{grid-template-columns:repeat(2,1fr);margin:0 32px 64px}
   .det-body{grid-template-columns:1fr}
   .det-side{border-left:none;border-top:1.5px solid var(--sb);padding-left:0;padding-top:32px}
@@ -1083,7 +1083,7 @@ a.ci-val:hover{color:var(--o)}
   .nav-links{display:none}
   .hero-left{padding:56px 24px}
   .sw,.pg-hero{padding-left:24px;padding-right:24px}
-  .masonry{columns:1;padding:40px 24px 72px}
+  .masonry{grid-template-columns:1fr;padding:40px 24px 72px}
   .team-grid{grid-template-columns:1fr;margin:0 20px 48px}
   .cta-strip{flex-direction:column;align-items:flex-start;padding:56px 24px}
   footer .footer-inner{padding:48px 24px 28px}
