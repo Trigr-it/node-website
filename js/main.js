@@ -56,7 +56,7 @@ const PD={
     ref:'DWG / PRJ-008',
     img:'/images/projects/fibi-house/01.webp',
     images:['/images/projects/fibi-house/01.webp','/images/projects/fibi-house/02.webp','/images/projects/fibi-house/03.webp'],
-    client:'Scaffold Contractor',date:'February 2025',location:'Central London',
+    client:'Unison Scaffolding',date:'February 2025',location:'Central London',
     body:'<h3>Project Overview</h3><p>We were appointed to provide scaffold design for the refurbishment of Fibi House in central London. The scaffold design included a temporary roof structure to allow roofing works to proceed in all weather conditions without programme delays.</p><h3>The Design Challenge</h3><p>A temporary roof above an occupied adjacent building required careful load management and wind analysis. The design had to demonstrate that the system could withstand the full ULS wind load without transferring significant forces into the existing structure below.</p><h3>What Node Delivered</h3><p>Full temporary roof scaffold design including wind analysis and load transfer calculations. 2D construction drawings and 3D model provided to allow the scaffold contractor to price and programme the works accurately before mobilisation.</p>',
     specs:[['DWG Ref','PRJ-008 / Rev A'],['Sector','Commercial Office'],['Location','Central London'],['Type','Temporary Roof Scaffold'],['Analysis','Wind Loading / ULS'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','February 2025']]
   },
@@ -66,7 +66,7 @@ const PD={
     ref:'DWG / PRJ-007',
     img:'/images/projects/millbrook-hall/01.webp',
     images:['/images/projects/millbrook-hall/01.webp','/images/projects/millbrook-hall/02.webp'],
-    client:'Scaffold Contractor',date:'January 2025',location:'UK',
+    client:'Ainscaff Scaffolding',date:'January 2025',location:'UK',
     body:'<h3>Project Overview</h3><p>Our team provided scaffold design for the refurbishment of Millbrook Hall, a large residential property requiring comprehensive external works. Complex roof geometry and restricted site access required a fully bespoke scaffold solution rather than a standard modular system.</p><h3>What Node Delivered</h3><p>Bespoke scaffold design accounting for the full roof profile, with detailed tie positions and loading calculations. Full 2D drawing set and 3D model issued to allow the contractor to erect the scaffold without ambiguity.</p>',
     specs:[['DWG Ref','PRJ-007 / Rev A'],['Sector','Residential'],['Type','Bespoke Scaffold Design'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','January 2025']]
   },
@@ -76,7 +76,7 @@ const PD={
     ref:'DWG / PRJ-006',
     img:'/images/projects/wardour-street/01.webp',
     images:['/images/projects/wardour-street/01.webp'],
-    client:'Scaffold Contractor',date:'December 2024',location:'Soho, London W1',
+    client:'Mason Scaffolding',date:'December 2024',location:'Soho, London W1',
     body:'<h3>Project Overview</h3><p>We were appointed to deliver the scaffold design for a refurbishment project at 141 Wardour Street in the heart of Soho. The scaffold design had to address highly restricted pavement space on one of central London\u2019s busiest streets while maintaining pedestrian access throughout the works.</p><h3>The Design Challenge</h3><p>Wardour Street\u2019s narrow pavement, combined with active ground-floor retail, meant any scaffold encroaching onto the public highway required full loading analysis and Westminster City Council approval. The design minimised footway obstruction while maintaining full access to upper floors throughout the works programme.</p><h3>What Node Delivered</h3><p>Bespoke scaffold design with full documentation for the highway licence application. Calculations demonstrating compliance with Westminster requirements, alongside a full 2D and 3D design package issued to the contractor.</p>',
     specs:[['DWG Ref','PRJ-006 / Rev A'],['Sector','Commercial'],['Location','Soho, W1'],['Type','Refurbishment Scaffold'],['Authority','Westminster City Council'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','December 2024']]
   },
@@ -86,7 +86,7 @@ const PD={
     ref:'DWG / PRJ-002',
     img:'/images/projects/merchant-square/01.jpg',
     images:['/images/projects/merchant-square/01.jpg','/images/projects/merchant-square/02.jpg','/images/projects/merchant-square/03.jpg'],
-    client:'Scaffold Contractor',date:'July 2024',location:'London',
+    client:'TG Scaffolding',date:'July 2024',location:'London',
     body:'<h3>Project Overview</h3><p>This scaffold design project in the heart of Merchant Square required a bespoke access solution for a large mixed-use development. The project involved careful coordination between multiple work packages and a tight urban site with restricted access.</p><h3>What Node Delivered</h3><p>Full scaffold design package including 2D construction drawings, 3D model and structural calculations, coordinated with the scaffold contractor and principal contractor throughout the project programme.</p>',
     specs:[['DWG Ref','PRJ-002 / Rev A'],['Sector','Commercial'],['Location','London'],['Type','Access Scaffold'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','July 2024']]
   },
