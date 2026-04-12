@@ -792,7 +792,7 @@ footer{
 
 /* ─── PROJECT DETAIL ─────────────────── */
 .det-hero{
-  padding-top:64px;
+  padding-top:64px;min-height:0;
   background-color:var(--bg);
   background-image:
     linear-gradient(var(--grid-major) 1px, transparent 1px),
@@ -807,7 +807,7 @@ footer{
 .det-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;z-index:0}
 .det-ph svg{color:#C0BAA8}
 .det-ph span{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#C0BAA8}
-.det-header{position:relative;z-index:2;padding:48px 52px 48px}
+.det-header{position:relative;z-index:2;padding:32px 52px 32px}
 .det-back{
   display:inline-flex;align-items:center;gap:8px;
   font-family:var(--mono);font-size:9px;font-weight:500;
@@ -849,22 +849,15 @@ footer{
   max-width:1000px;margin:0 auto;
 }
 .gal-frame{
-  flex:1;overflow:hidden;
+  flex:1;min-width:0;
   border:1.5px solid rgba(255,255,255,.1);
-  position:relative;
   background:rgba(0,0,0,.3);
-}
-.gal-frame::before{
-  content:'';position:absolute;inset:6px;
-  border:0.5px solid rgba(255,255,255,.06);
-  pointer-events:none;z-index:1;
 }
 .gal-frame img{
   width:100%;
-  max-height:560px;
+  height:480px;
   object-fit:cover;
   display:block;
-  transition:opacity .3s;
 }
 .gal-prev,.gal-next{
   width:44px;height:44px;
@@ -1099,7 +1092,7 @@ a.ci-val:hover{color:var(--o)}
   .tl{padding:0 24px 64px}
   .det-header,.det-body{padding-left:24px;padding-right:24px}
   .det-gallery{padding:24px}
-  .gal-frame img{max-height:360px}
+  .gal-frame img{height:280px}
   .gal-prev,.gal-next{width:36px;height:36px}
   .gal-thumb{width:48px;height:48px}
   .ct-left,.ct-right{padding:48px 24px}
