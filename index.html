@@ -71,6 +71,7 @@
       <script type="module">
       import * as THREE from 'three';
       import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+      import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
       import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 
       const container=document.getElementById('model-container');
@@ -95,8 +96,8 @@
       const dirLight=new THREE.DirectionalLight(0xffffff,2.5);
       dirLight.position.set(5,8,4);
       dirLight.castShadow=true;
-      dirLight.shadow.mapSize.width=2048;
-      dirLight.shadow.mapSize.height=2048;
+      dirLight.shadow.mapSize.width=1024;
+      dirLight.shadow.mapSize.height=1024;
       dirLight.shadow.camera.near=0.1;
       dirLight.shadow.camera.far=50;
       dirLight.shadow.camera.left=-10;
@@ -122,8 +123,13 @@
       controls.autoRotateSpeed=2.0;
 
       /* Load model */
+      const dracoLoader=new DRACOLoader();
+      dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/');
+      const gltfLoader=new GLTFLoader();
+      gltfLoader.setDRACOLoader(dracoLoader);
+
       let model;
-      new GLTFLoader().load('/images/Shard Model.glb',function(gltf){
+      gltfLoader.load('/images/Shard Model.glb',function(gltf){
         model=gltf.scene;
         model.traverse(function(child){
           if(child.isMesh){
