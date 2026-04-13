@@ -28,6 +28,7 @@
       <div class="nav-ref">DWG-001 / Rev A</div>
     </div>
   </a>
+  <button class="nav-toggle" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu"><svg class="nt-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg><svg class="nt-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
   <ul class="nav-links">
     <li><a href="/" data-nav="home">Home</a></li>
     <li><a href="/projects.html" data-nav="projects">Projects</a></li>
@@ -129,6 +130,11 @@
       controls.maxDistance=12;
       controls.autoRotate=true;
       controls.autoRotateSpeed=2.0;
+      /* Disable touch interaction on mobile — auto-rotate only */
+      if('ontouchstart' in window){
+        controls.enableZoom=false;
+        controls.enableRotate=false;
+      }
 
       /* Load model */
       const dracoLoader=new DRACOLoader();
