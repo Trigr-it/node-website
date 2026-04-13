@@ -135,7 +135,7 @@ const PD={
 
 /* ── Navigate to project detail ──────── */
 function det(slug){
-  window.location.href='/project.html?p='+slug;
+  window.location.href='/projects/'+slug+'.html';
 }
 
 /* ── Project filter (projects page) ──── */

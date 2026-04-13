@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Project — Node Group</title>
 <meta name="description" content="Scaffold design project by Node Group — specialist scaffold, hoist and MCWP design consultancy based in London.">
+<script>
+/* Redirect old ?p= URLs to new static pages */
+var s=new URLSearchParams(window.location.search).get('p');
+if(s) window.location.replace('/projects/'+s+'.html');
+</script>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/styles.css?v=3">
 </head>

@@ -894,13 +894,13 @@ footer{
 
 /* ─── TEAM PAGE ──────────────────────── */
 .team-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);
+  display:grid;grid-template-columns:repeat(4,1fr);
   gap:20px;
   margin:0 52px;
 }
 .tc{background:var(--w);transition:box-shadow .25s,border-color .25s,transform .2s;position:relative;overflow:hidden;border:1.5px solid var(--sb)}
 .tc:hover{box-shadow:0 12px 40px rgba(0,0,0,.1);border-color:var(--o);transform:translateY(-3px)}
-.tc-av{width:100%;height:380px;background:var(--bg);overflow:hidden;border-bottom:1px solid var(--sb)}
+.tc-av{width:100%;height:300px;background:var(--bg);overflow:hidden;border-bottom:1px solid var(--sb)}
 .tc-av img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
 .tc-av svg{width:24px;height:24px;color:var(--mu);margin:128px auto}
 .tc-meta{padding:20px 24px 28px}
