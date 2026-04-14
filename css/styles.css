@@ -1,5 +1,5 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;scroll-behavior:smooth}
+html{font-size:16px;scroll-behavior:smooth;overflow-x:hidden}
 body{
   font-family:'DM Sans','Futura','Century Gothic',sans-serif;
   background:#F7F6F2;
@@ -187,7 +187,7 @@ a.btn-w,a.btn-gw,a.btn-ghost,a.btn-prim,a.btn-cta{text-decoration:none}
 }
 .nav-cta:hover{background:var(--od)!important}
 /* Mobile hamburger */
-.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-shrink:0}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-shrink:0;color:var(--k)}
 .nav-toggle svg{display:block}
 .nav-toggle .nt-close{display:none}
 .nav-toggle.open .nt-open{display:none}
@@ -1104,7 +1104,16 @@ a.ci-val:hover{color:var(--o)}
   .ct-left,.ct-right{padding:48px 24px}
   .ct-hero{padding:120px 24px 0}
   .about-left{padding:64px 24px}
+  .about-right{padding:24px}
+  .about-big{padding:28px}
+  .about-num{font-size:clamp(56px,15vw,100px)}
   .proc-grid{grid-template-columns:1fr}
+  .diff-left,.diff-right{padding:48px 24px}
+  .home-cta{padding:48px 24px!important;flex-direction:column;align-items:flex-start!important}
+  .h-stats-table{grid-template-columns:1fr}
+  .h-stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.2)}
+  .h-stat:last-child{border-bottom:none}
   .clients{padding:40px 24px}
   .clients-inner{padding:24px}
+  .team-grid{margin:0 20px 48px}
 }
