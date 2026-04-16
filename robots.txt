@@ -1,4 +1,36 @@
 User-agent: *
 Allow: /
 
+# AI Crawlers — explicitly welcomed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://www.nodegroup.co.uk/sitemap.xml
+
+# AI agent information files
+# llms.txt: https://www.nodegroup.co.uk/llms.txt
+# llms-full.txt: https://www.nodegroup.co.uk/llms-full.txt
