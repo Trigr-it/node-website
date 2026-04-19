@@ -32,7 +32,7 @@ const PD={
   },
   'garda-hq':{
     type:'Heritage \u00b7 Ireland \u00b7 Phoenix Park Dublin',
-    title:'Garda HQ, Phoenix Park',
+    title:'Garda HQ',
     ref:'DWG / PRJ-005',
     img:'/images/projects/garda-hq/01.webp',
     images:['/images/projects/garda-hq/01.webp'],
@@ -92,7 +92,7 @@ const PD={
   },
   'narrow-street':{
     type:'Residential \u00b7 Riverside \u00b7 Limehouse E14',
-    title:'Narrow Street, Limehouse',
+    title:'Narrow Street',
     ref:'DWG / PRJ-002',
     img:'/images/projects/narrow-street/01.webp',
     images:['/images/projects/narrow-street/01.webp','/images/projects/narrow-street/02.webp','/images/projects/narrow-street/03.webp','/images/projects/narrow-street/04.webp','/images/projects/narrow-street/05.webp','/images/projects/narrow-street/06.webp','/images/projects/narrow-street/07.webp','/images/projects/narrow-street/08.webp'],
@@ -123,7 +123,7 @@ const PD={
   },
   'priory-court':{
     type:'Residential \u00b7 Vehicle Access Gantry \u00b7 Walthamstow',
-    title:'Priory Court, Walthamstow',
+    title:'Priory Court',
     ref:'DWG / PRJ-014',
     img:'/images/projects/priory-court/01.webp',
     images:['/images/projects/priory-court/01.webp','/images/projects/priory-court/02.webp','/images/projects/priory-court/03.webp','/images/projects/priory-court/04.webp'],
@@ -133,7 +133,7 @@ const PD={
   },
   'canada-square':{
     type:'Commercial \u00b7 Signage Removal \u00b7 Canary Wharf',
-    title:'5 Canada Square, Canary Wharf',
+    title:'5 Canada Square',
     ref:'DWG / PRJ-012',
     img:'/images/projects/canada-square/01.webp',
     images:['/images/projects/canada-square/01.webp','/images/projects/canada-square/02.webp','/images/projects/canada-square/03.webp','/images/projects/canada-square/04.webp','/images/projects/canada-square/05.webp','/images/projects/canada-square/06.webp','/images/projects/canada-square/07.webp','/images/projects/canada-square/08.webp'],
@@ -142,6 +142,56 @@ const PD={
     specs:[['DWG Ref','PRJ-012 / Rev A'],['Client','Proplant Scaffolding'],['Sector','Commercial \u00b7 Signage'],['Location','Canary Wharf, London'],['Type','Hanging Scaffold + Access'],['System','LAYHER'],['Deliverables','2D Dwgs, 3D Model, Calcs'],['Date','March 2026']]
   }
 };
+
+/* ── Card metadata for homepage rendering ─ */
+/* When adding a new project to PD, add a matching entry here */
+const CARD_DATA={
+  'priory-court':{desc:'Bespoke vehicle access gantry serving second, third and fourth floor loading bays on a restricted residential new-build site. Carefully sequenced around live operations.'},
+  'royal-albert-hall':{desc:'Bespoke heritage scaffold on one of London\'s most iconic landmarks. Full access to the curved terracotta fa\u00e7ade, handed over in just two weeks.',cardImg:'/images/projects/royal-albert-hall/02.webp'},
+  'canada-square':{desc:'Bespoke Layher access and hanging scaffold for high-level signage removal at the former Bank of America building. Weekend closures, full material tethering at height.'},
+  'vauxhall-gantry':{desc:'Heavy-duty protection gantry designed for 10kN/m\u00b2 loading with fire-rated steel boards and Layher public access staircase as secondary fire escape.'},
+  'lso-st-lukes':{desc:'Highly complex access scaffold for the Grade I listed LSO venue. Freestanding system with engineered buttress frames \u2014 no ties into the historic fabric.'},
+  'fibi-house':{desc:'Temporary roof scaffold for a central London commercial refurbishment. Full wind analysis and ULS load transfer calculations included.'},
+  'millbrook-hall':{desc:'Bespoke scaffold for a large residential refurbishment with complex roof geometry and restricted access.'},
+  'wardour-street':{desc:'Refurbishment scaffold in Soho with restricted pavement access and Westminster City Council highway licence documentation.'},
+  'london-coliseum':{desc:'Heritage scaffold for the ENO\'s iconic West End theatre. Heavy-duty pavement gantry and full-height dome scaffold with bridged bays.'},
+  'garda-hq':{desc:'Large-scale freestanding LAYHER scaffold and full temporary roof for the 1842 Garda Headquarters. No ties into the listed structure.'},
+  'woolwich-town-hall':{desc:'Full perimeter scaffold and large-span temporary roof for a Grade II* listed civic building. Pavement gantry and bespoke bridge beams over fragile roof structure.'},
+  'merchant-square':{desc:'Bespoke access scaffold for a large mixed-use development in the heart of London, coordinated across multiple work packages.'},
+  'narrow-street':{desc:'Riverside scaffold for balcony replacement on the Thames. PLA permits, tidal windows, and daily working restrictions in a demanding environment.'},
+  'the-gherkin':{desc:'Rolling cantilevered roof platform for BMU hydraulic arm replacement. New arm delivered by helicopter lift \u2014 zero disruption to occupants or public.'}
+};
+
+/* ── Render homepage latest 3 projects ── */
+function renderHomeProjects(){
+  var grid=document.getElementById('home-projects');
+  if(!grid) return;
+  var projects=Object.keys(PD).map(function(slug){
+    var d=PD[slug];
+    var m=d.ref.match(/PRJ-(\d+)/);
+    return {slug:slug,data:d,num:m?parseInt(m[1]):0};
+  });
+  projects.sort(function(a,b){return b.num-a.num});
+  var top3=projects.slice(0,3);
+  var arrow='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+  grid.innerHTML=top3.map(function(p){
+    var d=p.data;
+    var c=CARD_DATA[p.slug]||{};
+    var img=c.cardImg||d.img;
+    var desc=c.desc||d.body.replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim().substring(0,150)+'\u2026';
+    var shortDate=d.date.replace(/(\w{3})\w+/,'$1');
+    var shortLoc=d.location.split(',')[0];
+    return '<div class="pc" onclick="window.location.href=\'/projects/'+p.slug+'.html\'">'
+      +'<div class="pc-img" style="height:280px"><img src="'+img+'" alt="'+d.title+' scaffold design" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s" loading="lazy"></div>'
+      +'<div class="pc-meta">'
+      +'<div class="pc-ref"><span class="pc-ref-dot"></span>'+d.ref+'</div>'
+      +'<div class="pc-type">'+d.type+'</div>'
+      +'<div class="pc-title"><a href="/projects/'+p.slug+'.html" style="color:inherit;text-decoration:none">'+d.title+'</a></div>'
+      +'<p class="pc-desc">'+desc+'</p>'
+      +'<div class="pc-tb"><div class="pc-tb-date">'+shortDate+' \u00b7 '+d.client+' \u00b7 '+shortLoc+'</div><div class="pc-tb-arr">'+arrow+'</div></div>'
+      +'</div></div>';
+  }).join('');
+}
 
 /* ── Navigate to project detail ──────── */
 function det(slug){
@@ -275,6 +325,7 @@ function loadProjectDetail(){
 /* ── Init ─────────────────────────────── */
 document.addEventListener('DOMContentLoaded',function(){
   setActiveNav();
+  renderHomeProjects();
   setTimeout(function(){
     document.querySelectorAll('.reveal,.reveal-l,.reveal-r')
       .forEach(function(el,i){setTimeout(function(){el.classList.add('on')},100+(i*60))});
