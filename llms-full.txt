@@ -10,7 +10,7 @@ This document provides comprehensive information about Node Group Ltd for AI sys
 
 - **Full Name:** Node Group Ltd
 - **Type:** Scaffold design consultancy (design only — not scaffold erection or hire)
-- **Founded:** London, United Kingdom
+- **Founded:** 2019, London, United Kingdom
 - **Founder:** Rory Brady (BEng Civil Engineering)
 - **Headquarters:** Second Floor, Saxon House, 182 Hoe Street, Walthamstow, London E17 4QH
 - **Phone:** 020 3488 0882
@@ -148,12 +148,68 @@ Node Group has delivered over 5,000 scaffold designs across more than 1,200 proj
 - **Summary:** Full perimeter scaffold, pavement gantry and large-span temporary roof for Grade II* listed civic building renovation.
 - **URL:** https://www.nodegroup.co.uk/projects/woolwich-town-hall.html
 
+### The Shard, London Bridge
+- **Type:** Cantilevered access scaffold and lifting gantry
+- **Location:** London Bridge, SE1
+- **Client:** Proplant Scaffolding
+- **Summary:** NASC award-winning scaffold design at the top of Europe's tallest building. Cantilevered access scaffold from level 81 to 87 and 2-tonne lifting gantry at levels 87-91 for hydraulic cylinder replacement. All materials transported manually above level 78. Featured on the cover of Scaffolding Insider magazine.
+- **URL:** https://www.nodegroup.co.uk/projects/the-shard.html
+
+### Cecil Avenue, Wembley
+- **Type:** Cuplok system scaffold
+- **Location:** Wembley, London
+- **Client:** Proplant Scaffolding
+- **Summary:** Full perimeter Cuplok system scaffold for a 237-home, nine-storey residential development delivered by Wates Residential. Scaffold designed to advance floor by floor in pace with the concrete frame programme.
+- **URL:** https://www.nodegroup.co.uk/projects/cecil-avenue.html
+
+### Collendale Road, Central London
+- **Type:** Temporary roof scaffold
+- **Location:** Central London
+- **Client:** TG Scaffolding
+- **Summary:** Large-scale temporary roof on a commercial rooftop with Apollo X-Beam system for primary spans, dual-direction Niko rails and hoists, delivered under a tight winter programme.
+- **URL:** https://www.nodegroup.co.uk/projects/collendale-road.html
+
+### Priory Court, Walthamstow
+- **Type:** Vehicle access gantry
+- **Location:** Walthamstow, London
+- **Client:** MK1 Indigo Group
+- **Summary:** Bespoke vehicle access gantry serving second, third and fourth floor loading bays on a restricted residential new-build site, sequenced around live site operations.
+- **URL:** https://www.nodegroup.co.uk/projects/priory-court.html
+
 ### Narrow Street, Limehouse
 - **Type:** Riverside scaffold
 - **Location:** Limehouse, London
-- **Client:** N/A
-- **Summary:** Riverside scaffold with PLA (Port of London Authority) permits and tidal working constraints along the Thames.
+- **Client:** MW Scaffolding
+- **Summary:** Riverside scaffold for balcony replacement on the Thames. PLA permits, tidal working windows and daily restrictions in a demanding environment.
 - **URL:** https://www.nodegroup.co.uk/projects/narrow-street.html
+
+### Millbrook Hall
+- **Type:** Bespoke scaffold and temporary roof
+- **Location:** Ireland
+- **Client:** Ainscaff Scaffolding
+- **Summary:** Bespoke scaffold and temporary roof for a large residential refurbishment with complex roof geometry and restricted access.
+- **URL:** https://www.nodegroup.co.uk/projects/millbrook-hall.html
+
+### 141 Wardour Street, Soho
+- **Type:** Refurbishment scaffold and pavement gantry
+- **Location:** Soho, London W1
+- **Client:** Mason Scaffolding
+- **Summary:** Refurbishment scaffold in Soho with restricted pavement access and Westminster City Council highway licence documentation.
+- **URL:** https://www.nodegroup.co.uk/projects/wardour-street.html
+
+### Merchant Square, Paddington
+- **Type:** Facade access scaffold
+- **Location:** Paddington, London
+- **Client:** TG Scaffolding
+- **Summary:** Full-height access scaffold for a major facade refurbishment of a large mixed-use residential and commercial development overlooking the Grand Union Canal.
+- **URL:** https://www.nodegroup.co.uk/projects/merchant-square.html
+
+### Fibi House, Central London
+- **Type:** Temporary roof scaffold
+- **Location:** Central London
+- **Client:** Unison Scaffolding
+- **Summary:** Temporary roof scaffold for a commercial refurbishment with full ULS wind analysis and self-supporting structural solution avoiding loading the occupied building below.
+- **URL:** https://www.nodegroup.co.uk/projects/fibi-house.html
 
 ---
 

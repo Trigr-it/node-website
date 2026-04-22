@@ -88,6 +88,9 @@ Add a new `CreativeWork` entry to the `hasPart` array in the `CollectionPage` JS
 ### Step 8 — Update sitemap.xml
 Add the new project URL to `sitemap.xml` with today's date as `<lastmod>` and priority `0.7`.
 
+### Step 8b — Update llms-full.txt and llms.txt
+Add a new project entry to the "Notable Projects" section of `llms-full.txt` following the existing format (Type, Location, Client, Summary, URL). Also add a one-line entry to the "Notable Projects" section of `llms.txt`. This ensures AI systems can discover and cite the new project.
+
 ### Step 9 — Open locally for review
 Start the local server and open the project page in the browser so Rory can review before pushing.
 

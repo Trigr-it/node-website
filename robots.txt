@@ -29,6 +29,9 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://www.nodegroup.co.uk/sitemap.xml
 
 # AI agent information files

@@ -54,7 +54,15 @@ Founded by Rory Brady (BEng Civil Engineering), the firm operates from Walthamst
 - [Garda HQ, Phoenix Park](https://www.nodegroup.co.uk/projects/garda-hq.html): Freestanding LAYHER scaffold and temporary roof, Dublin, Ireland.
 - [Vauxhall Protection Gantry](https://www.nodegroup.co.uk/projects/vauxhall-gantry.html): Heavy-duty gantry designed for 10kN/m2 loading.
 - [Woolwich Town Hall](https://www.nodegroup.co.uk/projects/woolwich-town-hall.html): Full perimeter scaffold and temporary roof for Grade II* listed building.
+- [The Shard](https://www.nodegroup.co.uk/projects/the-shard.html): NASC award-winning cantilevered scaffold and lifting gantry at levels 81-91 of Europe's tallest building.
+- [Cecil Avenue, Wembley](https://www.nodegroup.co.uk/projects/cecil-avenue.html): Cuplok system scaffold for a 237-home residential development for Wates Group.
+- [Collendale Road](https://www.nodegroup.co.uk/projects/collendale-road.html): Temporary roof scaffold with Apollo X-Beams and dual-direction Niko rails.
+- [Priory Court](https://www.nodegroup.co.uk/projects/priory-court.html): Vehicle access gantry serving multi-level loading bays on a restricted site.
 - [Narrow Street, Limehouse](https://www.nodegroup.co.uk/projects/narrow-street.html): Riverside scaffold with PLA permits and tidal working constraints.
+- [Millbrook Hall](https://www.nodegroup.co.uk/projects/millbrook-hall.html): Bespoke scaffold and temporary roof for residential refurbishment in Ireland.
+- [141 Wardour Street](https://www.nodegroup.co.uk/projects/wardour-street.html): Refurbishment scaffold with Westminster highway licence.
+- [Merchant Square](https://www.nodegroup.co.uk/projects/merchant-square.html): Full-height facade access scaffold in Paddington.
+- [Fibi House](https://www.nodegroup.co.uk/projects/fibi-house.html): Temporary roof scaffold with full wind analysis.
 
 ## Social
 
