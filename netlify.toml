@@ -4,6 +4,157 @@
   publish = "."
   command = ""
 
+# ── 301 Redirects: Old WordPress URLs → new static pages ──────────
+# Project posts (WordPress date-based URLs)
+[[redirects]]
+  from = "/2024/09/12/woolwich-town-hall/*"
+  to = "/projects/woolwich-town-hall.html"
+  status = 301
+[[redirects]]
+  from = "/2024/11/07/garda-hq-heritage-scaffold-design-ireland/*"
+  to = "/projects/garda-hq.html"
+  status = 301
+[[redirects]]
+  from = "/2024/12/03/141-wardour-street-refurbishment-scaffold-design/*"
+  to = "/projects/wardour-street.html"
+  status = 301
+[[redirects]]
+  from = "/2024/12/09/london-coliseum-heritage-scaffold-design/*"
+  to = "/projects/london-coliseum.html"
+  status = 301
+[[redirects]]
+  from = "/2025/01/31/millbrook-hall-scaffold-design/*"
+  to = "/projects/millbrook-hall.html"
+  status = 301
+[[redirects]]
+  from = "/2025/02/09/fibi-house-temporary-roof-scaffold-design/*"
+  to = "/projects/fibi-house.html"
+  status = 301
+[[redirects]]
+  from = "/2025/05/22/lso-st-lukes-church/*"
+  to = "/projects/lso-st-lukes.html"
+  status = 301
+[[redirects]]
+  from = "/2021/04/10/the-priory/*"
+  to = "/projects.html"
+  status = 301
+
+# WordPress section pages
+[[redirects]]
+  from = "/faqs/"
+  to = "/#faq"
+  status = 301
+[[redirects]]
+  from = "/contact-us/"
+  to = "/contact.html"
+  status = 301
+[[redirects]]
+  from = "/our-history/"
+  to = "/about.html"
+  status = 301
+[[redirects]]
+  from = "/team/"
+  to = "/team.html"
+  status = 301
+[[redirects]]
+  from = "/about/"
+  to = "/about.html"
+  status = 301
+[[redirects]]
+  from = "/projects/"
+  to = "/projects.html"
+  status = 301
+
+# WordPress category/author/archive catch-alls
+[[redirects]]
+  from = "/category/*"
+  to = "/projects.html"
+  status = 301
+[[redirects]]
+  from = "/author/*"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/page/*"
+  to = "/"
+  status = 301
+
+# Catch-all for any remaining WordPress date-based post URLs
+[[redirects]]
+  from = "/20??/??/??/*"
+  to = "/projects.html"
+  status = 301
+
+# Clean URLs: serve .html pages without extension
+[[redirects]]
+  from = "/projects/the-shard"
+  to = "/projects/the-shard.html"
+  status = 301
+[[redirects]]
+  from = "/projects/cecil-avenue"
+  to = "/projects/cecil-avenue.html"
+  status = 301
+[[redirects]]
+  from = "/projects/collendale-road"
+  to = "/projects/collendale-road.html"
+  status = 301
+[[redirects]]
+  from = "/projects/priory-court"
+  to = "/projects/priory-court.html"
+  status = 301
+[[redirects]]
+  from = "/projects/royal-albert-hall"
+  to = "/projects/royal-albert-hall.html"
+  status = 301
+[[redirects]]
+  from = "/projects/canada-square"
+  to = "/projects/canada-square.html"
+  status = 301
+[[redirects]]
+  from = "/projects/vauxhall-gantry"
+  to = "/projects/vauxhall-gantry.html"
+  status = 301
+[[redirects]]
+  from = "/projects/lso-st-lukes"
+  to = "/projects/lso-st-lukes.html"
+  status = 301
+[[redirects]]
+  from = "/projects/london-coliseum"
+  to = "/projects/london-coliseum.html"
+  status = 301
+[[redirects]]
+  from = "/projects/the-gherkin"
+  to = "/projects/the-gherkin.html"
+  status = 301
+[[redirects]]
+  from = "/projects/garda-hq"
+  to = "/projects/garda-hq.html"
+  status = 301
+[[redirects]]
+  from = "/projects/woolwich-town-hall"
+  to = "/projects/woolwich-town-hall.html"
+  status = 301
+[[redirects]]
+  from = "/projects/fibi-house"
+  to = "/projects/fibi-house.html"
+  status = 301
+[[redirects]]
+  from = "/projects/millbrook-hall"
+  to = "/projects/millbrook-hall.html"
+  status = 301
+[[redirects]]
+  from = "/projects/wardour-street"
+  to = "/projects/wardour-street.html"
+  status = 301
+[[redirects]]
+  from = "/projects/merchant-square"
+  to = "/projects/merchant-square.html"
+  status = 301
+[[redirects]]
+  from = "/projects/narrow-street"
+  to = "/projects/narrow-street.html"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
