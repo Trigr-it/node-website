@@ -62,6 +62,7 @@ Founded by Rory Brady (BEng Civil Engineering), the firm operates from Walthamst
 - [Millbrook Hall](https://www.nodegroup.co.uk/projects/millbrook-hall.html): Bespoke scaffold and temporary roof for residential refurbishment in Ireland.
 - [141 Wardour Street](https://www.nodegroup.co.uk/projects/wardour-street.html): Refurbishment scaffold with Westminster highway licence.
 - [Merchant Square](https://www.nodegroup.co.uk/projects/merchant-square.html): Full-height facade access scaffold in Paddington.
+- [Tooley Street](https://www.nodegroup.co.uk/projects/tooley-street.html): Access scaffold and pavement gantry behind London Bridge station, high-footfall corner site.
 - [Fibi House](https://www.nodegroup.co.uk/projects/fibi-house.html): Temporary roof scaffold with full wind analysis.
 
 ## Social
