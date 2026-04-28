@@ -71,16 +71,20 @@ apple-touch-icon.png    Apple touch icon (180x180)
 - **Project detail pages** are individual static HTML files in `/projects/` — each has unique SEO meta tags, canonical URLs, OG tags, JSON-LD schema, and server-rendered content
 - **Each project page** has a "Related Projects" section before the footer linking to 2-3 similar projects
 - **Legacy `project.html`** has `noindex` and a JS redirect that sends `?p=slug` URLs to the new static pages
-- **Homepage** shows 3 featured project cards
+- **Homepage** shows the 3 latest project cards (highest PRJ numbers) in `#home-projects`. These are rendered two ways:
+  - **Static HTML** in `index.html` — must be kept in sync for SEO crawlers and no-JS fallback
+  - **Dynamic JS** via `renderHomeProjects()` in `main.js` — reads from PD, sorts by PRJ number, overwrites the static HTML on DOMContentLoaded
+  - **Both must show the same top 3 projects** — the static HTML is the source of truth for crawlers
 
 ### Adding a New Project
 1. Create image folder: `images/projects/project-slug/` with photos as **WebP** (`01.webp`, `02.webp`, etc.) — max 800px wide, quality 80-85
 2. Add project data to the `PD` object in `js/main.js` — body content must use `<h2>` for section headings
-3. Add a project card to `projects.html` with a proper `<a href>` inside `pc-title` (and optionally replace one on `index.html`)
-4. Create a new static file `projects/project-slug.html` — see SEO checklist below
-5. Add "Related Projects" section before the footer (2-3 related projects)
-6. Add the new URL to `sitemap.xml` with accurate `<lastmod>` date
-7. Update `llms.txt` if the project is notable
+3. Add a project card to `projects.html` with a proper `<a href>` inside `pc-title`
+4. **Update the static cards in `index.html`** if the new project is in the top 3 by PRJ number
+5. Create a new static file `projects/project-slug.html` — see SEO checklist below
+6. Add "Related Projects" section before the footer (2-3 related projects)
+7. Add the new URL to `sitemap.xml` with accurate `<lastmod>` date
+8. Update `llms.txt` if the project is notable
 
 ### New Project Page Checklist
 Every project page in `/projects/` MUST have:
@@ -220,7 +224,7 @@ Engineering drawing / drafting paper aesthetic:
 
 | Task | Files to Change |
 |---|---|
-| Add project | `js/main.js` (PD data), `projects.html` (card with `<a href>`), new `projects/slug.html` (with schema + related projects), `sitemap.xml`, optionally `llms.txt` |
+| Add project | `js/main.js` (PD + CARD_DATA), `projects.html` (card + JSON-LD hasPart), new `projects/slug.html` (with schema + related projects), `index.html` (update static top-3 cards if in top 3 by PRJ number), `sitemap.xml`, `llms.txt`, `llms-full.txt` |
 | Edit project content | `js/main.js` (PD object) + corresponding `projects/slug.html` |
 | Add team member | `team.html` (with `photo.webp`, width/height, lazy loading), update team.html JSON-LD Person entity |
 | Update team photo | Compress to WebP 800px wide, save as `photo.webp`, update `team.html` |

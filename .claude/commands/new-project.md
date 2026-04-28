@@ -91,6 +91,17 @@ Add the new project URL to `sitemap.xml` with today's date as `<lastmod>` and pr
 ### Step 8b — Update llms-full.txt and llms.txt
 Add a new project entry to the "Notable Projects" section of `llms-full.txt` following the existing format (Type, Location, Client, Summary, URL). Also add a one-line entry to the "Notable Projects" section of `llms.txt`. This ensures AI systems can discover and cite the new project.
 
+### Step 8c — Update homepage static cards if new project is in the top 3
+The homepage (`index.html`) has a `#home-projects` div with **static HTML cards** for the 3 latest projects (highest PRJ numbers). These are the SEO/no-JS fallback — JS overwrites them at runtime via `renderHomeProjects()` in main.js, but the static HTML must also be correct for crawlers.
+
+**Always check:** If the new project's PRJ number is in the top 3 (i.e. higher than at least one of the existing static cards), update the static HTML in `index.html`:
+1. Read the current 3 static cards in `#home-projects`
+2. Determine the top 3 projects by PRJ number from `js/main.js`
+3. Replace all 3 static cards with the correct top 3, using the same card HTML structure (pc-img, pc-meta, pc-ref, pc-type, pc-title with `<a href>`, pc-desc, pc-tb)
+4. Use data from PD and CARD_DATA in main.js for descriptions, images, types, dates etc.
+
+This step is critical — skipping it causes the homepage to show stale project cards to search engines and briefly on page load.
+
 ### Step 9 — Open locally for review
 Start the local server and open the project page in the browser so Rory can review before pushing.
 
