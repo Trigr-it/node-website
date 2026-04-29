@@ -63,6 +63,7 @@ Founded by Rory Brady (BEng Civil Engineering), the firm operates from Walthamst
 - [141 Wardour Street](https://www.nodegroup.co.uk/projects/wardour-street.html): Refurbishment scaffold with Westminster highway licence.
 - [Merchant Square](https://www.nodegroup.co.uk/projects/merchant-square.html): Full-height facade access scaffold in Paddington.
 - [Tooley Street](https://www.nodegroup.co.uk/projects/tooley-street.html): Access scaffold and pavement gantry behind London Bridge station, high-footfall corner site.
+- [West End Theatre](https://www.nodegroup.co.uk/projects/west-end-theatre.html): Gantry, hanging scaffold and temporary roof for a heritage theatre in London's West End.
 - [Fibi House](https://www.nodegroup.co.uk/projects/fibi-house.html): Temporary roof scaffold with full wind analysis.
 
 ## Social
