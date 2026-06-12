@@ -88,117 +88,18 @@
   <div class="hero-right">
     <div class="hero-right-inner">
       <div class="scaffold-drawing" id="model-container" style="flex:1;position:relative">
-        <canvas id="model-canvas" style="width:100%;height:100%;display:block"></canvas>
+        <img id="model-placeholder" src="/images/general/shard-model-static.webp" alt="3D model of The Shard, London" width="716" height="821" style="width:100%;height:100%;object-fit:contain;transition:opacity .5s">
+        <canvas id="model-canvas" style="width:100%;height:100%;display:block;position:absolute;inset:0;opacity:0;transition:opacity .5s"></canvas>
       </div>
-      <script type="module">
-      import * as THREE from 'three';
-      import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-      import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
-      import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-
-      const container=document.getElementById('model-container');
-      const canvas=document.getElementById('model-canvas');
-      const scene=new THREE.Scene();
-
-      const camera=new THREE.PerspectiveCamera(36,container.clientWidth/container.clientHeight,0.1,1000);
-      camera.position.set(3,2.66,3);
-
-      const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
-      renderer.setSize(container.clientWidth,container.clientHeight);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
-      renderer.shadowMap.enabled=true;
-      renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-      renderer.toneMapping=THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure=1.0;
-
-      /* Lighting with real shadows */
-      const ambient=new THREE.AmbientLight(0xffffff,0.4);
-      scene.add(ambient);
-
-      const dirLight=new THREE.DirectionalLight(0xffffff,2.5);
-      dirLight.position.set(5,8,4);
-      dirLight.castShadow=true;
-      dirLight.shadow.mapSize.width=1024;
-      dirLight.shadow.mapSize.height=1024;
-      dirLight.shadow.camera.near=0.1;
-      dirLight.shadow.camera.far=50;
-      dirLight.shadow.camera.left=-10;
-      dirLight.shadow.camera.right=10;
-      dirLight.shadow.camera.top=10;
-      dirLight.shadow.camera.bottom=-10;
-      dirLight.shadow.bias=-0.001;
-      dirLight.shadow.normalBias=0.02;
-      scene.add(dirLight);
-
-      const fillLight=new THREE.DirectionalLight(0xfff0e6,0.6);
-      fillLight.position.set(-3,2,-2);
-      scene.add(fillLight);
-
-      /* Controls */
-      const controls=new OrbitControls(camera,canvas);
-      controls.enableDamping=true;
-      controls.dampingFactor=0.05;
-      controls.enablePan=false;
-      controls.minDistance=2;
-      controls.maxDistance=12;
-      controls.autoRotate=true;
-      controls.autoRotateSpeed=2.0;
-      /* Disable touch interaction on mobile — auto-rotate only */
-      if('ontouchstart' in window){
-        controls.enableZoom=false;
-        controls.enableRotate=false;
-      }
-
-      /* Load model */
-      const dracoLoader=new DRACOLoader();
-      dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/libs/draco/');
-      const gltfLoader=new GLTFLoader();
-      gltfLoader.setDRACOLoader(dracoLoader);
-
-      let model;
-      gltfLoader.load('/images/Shard Model.glb',function(gltf){
-        model=gltf.scene;
-        model.traverse(function(child){
-          if(child.isMesh){
-            child.castShadow=true;
-            child.receiveShadow=true;
-          }
-        });
-        scene.add(model);
-        /* Centre and scale */
-        const box=new THREE.Box3().setFromObject(model);
-        const center=box.getCenter(new THREE.Vector3());
-        const size=box.getSize(new THREE.Vector3());
-        const maxDim=Math.max(size.x,size.y,size.z);
-        const scale=4/maxDim;
-        model.scale.setScalar(scale);
-        model.position.sub(center.multiplyScalar(scale));
-        /* Adjust shadow camera to model */
-        dirLight.shadow.camera.left=-size.x*scale;
-        dirLight.shadow.camera.right=size.x*scale;
-        dirLight.shadow.camera.top=size.y*scale;
-        dirLight.shadow.camera.bottom=-size.y*scale;
-        dirLight.shadow.camera.updateProjectionMatrix();
-        controls.target.set(0,0.56,0);
-        controls.update();
-      });
-
-      /* Resize */
-      function onResize(){
-        const w=container.clientWidth,h=container.clientHeight;
-        camera.aspect=w/h;
-        camera.updateProjectionMatrix();
-        renderer.setSize(w,h);
-      }
-      window.addEventListener('resize',onResize);
-
-      /* Render loop */
-      function animate(){
-        requestAnimationFrame(animate);
-        controls.update();
-        renderer.render(scene,camera);
-      }
-      animate();
+      <script>
+      (function(){
+        var isMobile=matchMedia('(max-width: 768px)').matches||'ontouchstart' in window;
+        var saveData=navigator.connection&&navigator.connection.saveData;
+        if(isMobile||saveData) return;
+        var boot=function(){setTimeout(function(){import('/js/hero-3d.js?v=1').then(function(m){m.init3D();});},1500);};
+        if('requestIdleCallback' in window) requestIdleCallback(boot,{timeout:3000});
+        else addEventListener('load',boot);
+      })();
       </script>
       <div class="hero-title-block">
         <div class="htb-cell">
