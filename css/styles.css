@@ -15,8 +15,8 @@ body{
   --bg:#F7F6F2;       /* warm off-white — drafting paper */
   --bg2:#F0EEE8;      /* slightly darker paper */
   --sb:#D8D4C8;       /* warm border — aged paper */
-  --s:#727272;
-  --mu:#999990;       /* muted warm grey */
+  --s:#5C5C5C;        /* secondary text — WCAG AA on --bg */
+  --mu:#666660;       /* muted warm grey — WCAG AA on --bg */
   --mono:'DM Mono','Courier New',monospace;
   /* Graph paper grid lines */
   --grid-major:rgba(180,170,150,0.16);

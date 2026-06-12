@@ -14,9 +14,9 @@ export function init3D(){
 
   const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
   renderer.setSize(container.clientWidth,container.clientHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));
   renderer.shadowMap.enabled=true;
-  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+  renderer.shadowMap.type=THREE.PCFShadowMap;
   renderer.toneMapping=THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure=1.0;
 
@@ -26,8 +26,8 @@ export function init3D(){
   const dirLight=new THREE.DirectionalLight(0xffffff,2.5);
   dirLight.position.set(5,8,4);
   dirLight.castShadow=true;
-  dirLight.shadow.mapSize.width=1024;
-  dirLight.shadow.mapSize.height=1024;
+  dirLight.shadow.mapSize.width=512;
+  dirLight.shadow.mapSize.height=512;
   dirLight.shadow.camera.near=0.1;
   dirLight.shadow.camera.far=50;
   dirLight.shadow.camera.left=-10;
@@ -56,6 +56,21 @@ export function init3D(){
   const gltfLoader=new GLTFLoader();
   gltfLoader.setDRACOLoader(dracoLoader);
 
+  let modelLoaded=false,visible=true,running=false;
+
+  function animate(){
+    if(!running) return;
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene,camera);
+  }
+  function maybeStart(){
+    if(modelLoaded && visible && !running){
+      running=true;
+      animate();
+    }
+  }
+
   gltfLoader.load('/images/Shard Model.glb',function(gltf){
     const model=gltf.scene;
     model.traverse(function(child){
@@ -82,7 +97,8 @@ export function init3D(){
     renderer.render(scene,camera);
     if(placeholder) placeholder.style.opacity='0';
     canvas.style.opacity='1';
-    animate();
+    modelLoaded=true;
+    maybeStart();
   });
 
   function onResize(){
@@ -93,9 +109,12 @@ export function init3D(){
   }
   window.addEventListener('resize',onResize);
 
-  function animate(){
-    requestAnimationFrame(animate);
-    controls.update();
-    renderer.render(scene,camera);
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(function(entries){
+      visible=entries[0].isIntersecting;
+      if(visible) maybeStart();
+      else running=false;
+    },{threshold:0.01});
+    io.observe(container);
   }
 }
