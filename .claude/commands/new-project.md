@@ -105,6 +105,44 @@ This step is critical — skipping it causes the homepage to show stale project 
 ### Step 9 — Open locally for review
 Start the local server and open the project page in the browser so Rory can review before pushing.
 
+### Step 10 — Generate LinkedIn carousel
+Every new project gets a LinkedIn document carousel built from the same data. This produces a 1080×1350 portrait PDF saved alongside the project page.
+
+1. **Add an entry to `carousel/projects.js`** keyed by the project slug. Required fields:
+   - `ref` — PRJ ref (e.g. `'PRJ-020'`)
+   - `title` — project name
+   - `sector` — e.g. `'Heritage · Grade I Listed'` or `'Commercial · High Rise'`
+   - `location` — e.g. `'Kensington, London SW7'`
+   - `date` — e.g. `'May 2026'`
+   - `client` — scaffolding contractor name
+   - `coverImage` — usually `'01.webp'`
+   - `overview` — `{ headline, body }` — one bold headline + one short paragraph (use post text + image observations, NOT generic copy)
+   - `challenge` — `{ headline, bullets }` — 3-4 specific challenge bullets (no padding/filler)
+   - `delivered` — `{ stat, statLabel, headline, bullets, image }` — pick the most impactful stat (e.g. `'2 weeks'`, `'48m tall'`, `'24 bays'`), 3-4 deliverables, and a second image (`'02.webp'`)
+   - `photoSlide` — `{ image: '03.webp', caption, ref }` — a third on-site photo with a short caption (used when no 3D model exists, which is the default for new LinkedIn-sourced projects)
+   - `model3d` — **omit** for new projects (3D models are added later when design work is done). If a 3D model URL exists, add `{ url, headline, caption }` and the photoSlide is skipped automatically.
+   - `linkedinPost` — short LinkedIn post body Rory will paste into the actual LinkedIn post when uploading the carousel. Use a JS template literal (backticks) to allow line breaks. Aim for ~80–100 words across 3–4 short paragraphs:
+     1. Strong one-line hook framing what makes this project notable
+     2. 1–2 sentences of substance — specific challenges or outcomes (no generic filler)
+     3. Link line: `Read the full case study → https://www.nodegroup.co.uk/projects/[slug].html`
+     4. 4–5 hashtags, including `#ScaffoldDesign` and project-specific ones (e.g. `#HeritageScaffolding`, `#RoyalAlbertHall`, `#UKConstruction`)
+
+2. **Run the generator:** `node carousel/generate.js [slug]`
+   This writes outputs into `projects/[slug]/` (alongside the HTML page):
+   - `carousel.pdf` — the LinkedIn upload
+   - `preview.html` — side-by-side desktop+mobile preview at LinkedIn-rendered sizes
+   - `slides.html` — the underlying slide HTML (debug)
+   - `slide-01.png` ... `slide-05.png` — each slide as a PNG (used by preview.html)
+   - `linkedin-post.md` — copy-paste-ready LinkedIn post body
+   - `3d-capture.png` — only if a 3D model URL is configured
+
+3. **Tell Rory the file paths** so he can open them manually for review. Example:
+   - Preview: `projects/[slug]/preview.html`
+   - PDF: `projects/[slug]/carousel.pdf`
+   - LinkedIn post text: `projects/[slug]/linkedin-post.md`
+
+The `projects/[slug]/` folder is gitignored and netlifyignored — carousel files stay local-only and never deploy to the live site.
+
 ## Key rules
 - **Never ask questions** — infer everything possible, use "TBC" for anything truly unknown
 - Client is always the scaffolding contractor

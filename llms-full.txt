@@ -234,6 +234,20 @@ Node Group has delivered over 5,000 scaffold designs across more than 1,200 proj
 - **Summary:** Full refurbishment scaffold package on a busy West End retail street. Cantilevered protection fan over the pavement with vehicle access beneath, full-height access scaffold with printed facade dressing, 2-tonne rack-and-pinion hoist tower, integrated 2-tonne internal running beam, Hakki staircase and a temporary roof enclosure across the full building footprint.
 - **URL:** https://www.nodegroup.co.uk/projects/marylebone-high-street.html
 
+### Wellings House, Hayes
+- **Type:** Demolition access scaffold + 2,000 kg passenger/goods hoist run + 200 kg tool hoist run + external staircase tower + Monarflex sheeting
+- **Location:** Avondale Drive Estate, Hayes, London UB3
+- **Client:** MK1 Indigo Group (with Northeast Demolition)
+- **Summary:** Full temporary works design for the progressive top-down demolition of a 12-storey 1960s system-built residential tower, part of Hillingdon Council's Avondale regeneration in partnership with Higgins Partnerships. Load Class 3 general purpose access with Load Class 6+ (10.0 kN/m²) heavy-duty loading platform, 2,000 kg passenger/goods hoist tied into the scaffold, separate 200 kg tool hoist run, external staircase tower and Monarflex-type full envelope sheeting. Designed to SG4:22, TG20 and STA framework.
+- **URL:** https://www.nodegroup.co.uk/projects/wellings-house.html
+
+### Occasio House, Harlow
+- **Type:** Full-perimeter access scaffold + cantilevered loading bays + independent staircase towers
+- **Location:** Playhouse Cultural Quarter, Harlow, Essex
+- **Client:** MK1 Indigo Group (Main Contractor: Hill)
+- **Summary:** Full scaffold design across two RC-frame blocks of differing heights for Harlow Council's £34 million Playhouse Cultural Quarter regeneration. Lift-by-lift erection sequenced against the slab pour programme with cantilevered loading bays for direct tower crane material handling, independent external staircase towers separated from the crane exclusion zone, and gable-end debris netting coordinated against ULS wind analysis for the open-frame phase.
+- **URL:** https://www.nodegroup.co.uk/projects/occasio-house.html
+
 ---
 
 ## Sectors and Project Types
