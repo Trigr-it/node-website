@@ -216,5 +216,56 @@ Occasio House is part of Harlow Council’s £34m Playhouse Cultural Quarter, de
 Read the full case study → https://www.nodegroup.co.uk/projects/occasio-house.html
 
 #ScaffoldDesign #NewBuild #TownCentreRegeneration #Harlow #UKConstruction`
+  },
+  'greenwell-academy': {
+    ref: 'PRJ-023',
+    title: 'The Greenwell Academy',
+    sector: 'Education · SEND New Build',
+    location: 'Harlow, Essex',
+    date: 'October 2026',
+    client: 'Fourways Plant',
+    coverImage: '01.webp',
+
+    overview: {
+      headline: 'Two temporary roofs over a new special school, craned in by the section.',
+      body: 'Temporary roof and support scaffold design for The Greenwell Academy — a new 64-place SEND school for the Beckmead Trust on Tendring Road, Harlow, delivered by Tilbury Douglas. Steel frames with composite metal-deck floors still being completed beneath, a mobile crane with room to work, and a programme that needed both roofs up fast. Designed for Fourways Plant.'
+    },
+
+    challenge: {
+      headline: 'Designing the roof around the crane, not the other way round.',
+      bullets: [
+        'Lattice-beam trusses spanning each block onto a tube-and-fitting perimeter scaffold',
+        'Modular bays assembled at ground level, rigged and landed in sections',
+        'Lifting condition checked separately from the in-service wind case',
+        'Fully sheeted roofs and elevations analysed as sealed enclosures for ULS wind'
+      ]
+    },
+
+    delivered: {
+      stat: '2',
+      statLabel: 'Temporary roofs',
+      headline: 'One design package, two roofs, both erected at pace.',
+      bullets: [
+        'Lattice-beam roof structure and perimeter support scaffold to both blocks',
+        'Crane-lift sequencing of pre-assembled roof sections',
+        'Full sheeting arrangement and low-level loading platforms',
+        '2D drawings, 3D model and structural calculations to Fourways Plant'
+      ],
+      image: '02.webp'
+    },
+
+    photoSlide: {
+      image: '04.webp',
+      caption: 'A rigged lattice beam coming in to land on the support scaffold above the steel frame.',
+      ref: 'IMG / 04'
+    },
+
+    linkedinPost: `Two temporary roofs over The Greenwell Academy, a new SEND school in Harlow, designed around the crane from day one.
+
+With room on site for a mobile crane, the roof was set out in modular bays so lattice-beam sections could be assembled at ground level, rigged and landed onto the perimeter support scaffold in sections. Lifting case checked separately from the in-service wind case. Roofs and elevations fully sheeted. Both erected at pace for Fourways Plant on Tilbury Douglas's new-build for the Beckmead Trust.
+
+Read the full case study → https://www.nodegroup.co.uk/projects/greenwell-academy.html
+
+#ScaffoldDesign #TemporaryRoof #TemporaryWorks #GreenwellAcademy #Harlow #UKConstruction`
   }
 };

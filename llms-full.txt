@@ -248,6 +248,13 @@ Node Group has delivered over 5,000 scaffold designs across more than 1,200 proj
 - **Summary:** Full scaffold design across two RC-frame blocks of differing heights for Harlow Council's £34 million Playhouse Cultural Quarter regeneration. Lift-by-lift erection sequenced against the slab pour programme with cantilevered loading bays for direct tower crane material handling, independent external staircase towers separated from the crane exclusion zone, and gable-end debris netting coordinated against ULS wind analysis for the open-frame phase.
 - **URL:** https://www.nodegroup.co.uk/projects/occasio-house.html
 
+### The Greenwell Academy, Harlow
+- **Type:** Two temporary roofs + perimeter support scaffold + crane-lift sequencing
+- **Location:** Tendring Road, Harlow, Essex
+- **Client:** Fourways Plant (Main Contractor: Tilbury Douglas)
+- **Summary:** Temporary roof and support scaffold design for the two steel-frame blocks of The Greenwell Academy, a new purpose-built 64-place SEND school with residential accommodation for the Beckmead Trust, with composite metal-deck floors still being completed beneath. Lattice-beam trusses bearing onto a tube-and-fitting perimeter scaffold, set out in modular bays so roof sections could be assembled at ground level and crane-lifted into position, with the lifting condition checked separately from the in-service case. Roofs and elevations fully sheeted and analysed as sealed enclosures for ULS wind, with low-level loading platforms for landing materials off the crane.
+- **URL:** https://www.nodegroup.co.uk/projects/greenwell-academy.html
+
 ---
 
 ## Sectors and Project Types
