@@ -63,7 +63,7 @@ Read the full case study → https://www.nodegroup.co.uk/projects/royal-albert-h
   },
 
   'marylebone-high-street': {
-    ref: 'PRJ-021',
+    ref: 'PRJ-022',
     title: '1 Marylebone High Street',
     sector: 'Commercial · Refurbishment',
     location: 'Marylebone, London W1U',
@@ -167,7 +167,7 @@ Read the full case study → https://www.nodegroup.co.uk/projects/wellings-house
   },
 
   'occasio-house': {
-    ref: 'PRJ-022',
+    ref: 'PRJ-023',
     title: 'Occasio House',
     sector: 'Commercial · New Build',
     location: 'Harlow, Essex',
@@ -218,7 +218,7 @@ Read the full case study → https://www.nodegroup.co.uk/projects/occasio-house.
 #ScaffoldDesign #NewBuild #TownCentreRegeneration #Harlow #UKConstruction`
   },
   'greenwell-academy': {
-    ref: 'PRJ-023',
+    ref: 'PRJ-021',
     title: 'The Greenwell Academy',
     sector: 'Education · SEND New Build',
     location: 'Harlow, Essex',
