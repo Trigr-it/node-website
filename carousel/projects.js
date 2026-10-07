@@ -222,7 +222,7 @@ Read the full case study → https://www.nodegroup.co.uk/projects/occasio-house.
     title: 'The Greenwell Academy',
     sector: 'Education · SEND New Build',
     location: 'Harlow, Essex',
-    date: 'October 2026',
+    date: 'June 2026',
     client: 'Fourways Plant',
     coverImage: '01.webp',
 
