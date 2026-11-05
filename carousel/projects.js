@@ -63,7 +63,7 @@ Read the full case study → https://www.nodegroup.co.uk/projects/royal-albert-h
   },
 
   'marylebone-high-street': {
-    ref: 'PRJ-022',
+    ref: 'PRJ-023',
     title: '1 Marylebone High Street',
     sector: 'Commercial · Refurbishment',
     location: 'Marylebone, London W1U',
@@ -166,8 +166,66 @@ Read the full case study → https://www.nodegroup.co.uk/projects/wellings-house
 #ScaffoldDesign #DemolitionScaffolding #HighRise #TemporaryWorks #UKConstruction`
   },
 
+  'cavendish-square': {
+    ref: 'PRJ-022',
+    title: '33 Cavendish Square',
+    sector: 'Commercial · Façade Maintenance',
+    location: 'London W1',
+    date: 'July 2026',
+    client: 'Unison Scaffolding / BFT Mastclimbing',
+    coverImage: '01.webp',
+
+    model3d: {
+      url: 'https://3d.nodegroup.co.uk/m/66520260-cd24-468a-8d68-eec22ded0ed8',
+      headline: 'Scaffold, gantry and MCWP modelled together in 3D.',
+      caption: 'One coordinated model of the MCWP masts, the support gantry and the sheeted access scaffold to the lower blocks.'
+    },
+
+    overview: {
+      headline: 'Every access system on the job, designed by one consultancy.',
+      body: 'Minerva Building Restoration are back at 33 Cavendish Square for a full external maintenance programme: DOFF cleaning of the granite and Portland stone cladding, stone repairs and redecoration of the metal windows. Node designed the access scaffold, the gantry supporting the mast climber, and the MCWP itself.'
+    },
+
+    challenge: {
+      headline: 'A tall, exposed tower over a live West End entrance.',
+      bullets: [
+        'Full-height twin-mast MCWP to the tower elevation, with ties coordinated against the stone panel grid',
+        'Mast bases carried on a scaffold support gantry so the entrance and pavement stay open beneath',
+        'Fully sheeted independent scaffold and staircase tower to the lower blocks, designed for enclosure wind loads',
+        'Three access systems and multiple trades working from one set of load assumptions'
+      ]
+    },
+
+    delivered: {
+      stat: '3',
+      statLabel: 'Access systems, one design package',
+      headline: 'Scaffold, gantry and MCWP coordinated as a single design.',
+      bullets: [
+        'Full-height MCWP installation and tie layout to the tower façade',
+        'Scaffold support gantry carrying the mast base reactions over the live entrance',
+        'Sheeted independent access scaffold and external staircase tower to the lower blocks',
+        '2D drawings, 3D model and calculations for every element, issued to scaffolder, MCWP installer and restoration trades'
+      ],
+      image: '03.webp'
+    },
+
+    photoSlide: {
+      image: '05.webp',
+      caption: 'Fully sheeted access scaffold and staircase tower to the lower block, with the MCWP support gantry at street level.',
+      ref: 'IMG / 05'
+    },
+
+    linkedinPost: `Scaffold, gantry and mast climber, all designed under one roof at 33 Cavendish Square.
+
+Minerva Building Restoration are back on the tower for a full external maintenance programme: DOFF cleaning of the granite and Portland stone, stone repairs and redecoration of the metal windows. Node designed every access system the trades are working from: the full-height MCWP, the scaffold support gantry carrying the mast bases over the live entrance, and the fully sheeted access scaffold to the lower blocks. One coordinated package across multiple trades, not three designs reconciled on site.
+
+Read the full case study → https://www.nodegroup.co.uk/projects/cavendish-square.html
+
+#ScaffoldDesign #MCWP #MastClimber #FacadeRestoration #UKConstruction`
+  },
+
   'occasio-house': {
-    ref: 'PRJ-023',
+    ref: 'PRJ-024',
     title: 'Occasio House',
     sector: 'Commercial · New Build',
     location: 'Harlow, Essex',
