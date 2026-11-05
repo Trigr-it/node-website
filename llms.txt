@@ -41,7 +41,7 @@ Founded by Rory Brady (BEng Civil Engineering), the firm operates from Walthamst
 
 - [Homepage](https://www.nodegroup.co.uk/): Overview of services, featured projects and company introduction.
 - [About](https://www.nodegroup.co.uk/about.html): Company philosophy, approach and history.
-- [Projects](https://www.nodegroup.co.uk/projects.html): Portfolio of scaffold design case studies across heritage, commercial, residential and infrastructure sectors.
+- [Projects](https://www.nodegroup.co.uk/projects.html): Portfolio of scaffold design case studies across heritage, commercial, residential, education and infrastructure sectors.
 - [Team](https://www.nodegroup.co.uk/team.html): Named team of 10 specialist scaffold design engineers.
 - [Contact](https://www.nodegroup.co.uk/contact.html): Direct contact details for project enquiries.
 
